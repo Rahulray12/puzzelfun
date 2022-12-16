@@ -1,0 +1,21 @@
+/* Import googel fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Rubik+Gemstones&family=Unbounded&display=swap');
+
+/* pre-setting  */
+* {
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+body {
+    font-family: Unbounded, cursive;
+    color: #202020;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Heading and Modal */
+h1 {
+    font-family: 'Rubik Gemstones', cuesive;
+}
