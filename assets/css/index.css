@@ -22,6 +22,7 @@ h1 {
     font-family: 'Rubik Gemstones', cuesive;
     color: #5a093f;
     font-size: 260%;
+    text-transform: uppercase;
 }
 .logo {
     height:35px;
@@ -112,6 +113,17 @@ button:active{
     width:80%;
     position: relative;
     border:4px ridge rgb(177, 178, 231);
-    animation-name: ;
-    animation-duration: 0.5s;
+    /* Animates zoom effect on loading the page */
+    animation-name: game-guide-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+/* Zooming effect for game guide page */
+@keyframes game-guide-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
