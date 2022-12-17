@@ -38,25 +38,27 @@ button {
     font-size: 20px;
     font-weight: 400;
     color: #202020;
+    padding: 2px;
+
 }
 
 
 #green {
     color: rgb(15, 167, 60);
     text-shadow: 1px 1px 1px rgb(65, 190, 16);
-    padding:5px auto;
+    padding:2px 0px 3px 2px;
 }
 
 #blue {
     color: rgb(13, 51, 219);
     text-shadow: 1px 1px 1px rgb(65, 190, 16);
-    padding:5px auto;
+    padding:2px 0px 3px 2px;
 }
 
 #purple {
     color: rgb(179, 14, 201);
     text-shadow: 1px 1px 1px rgb(65, 190, 16);
-    padding:5px auto;
+    padding:2px 0px 3px 2px;
 }
 
 .game-func i {
