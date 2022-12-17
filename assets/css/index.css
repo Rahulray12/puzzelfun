@@ -82,5 +82,21 @@ button:active{
     justify-content: space-evenly;
 }
 
+/* Game Instruction Modal */
 
+/* Game Guide background */
+.guide-container {
+    font-family:Lato, sans-serif;
+    background-color: rgba(226, 222, 166, 0.6);
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin-top: 60px;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+}
 
+}
