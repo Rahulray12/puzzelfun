@@ -29,9 +29,24 @@ h1 {
     /* margin-right:5px; */
 
 }
-.function {
-    font-family: Unbounded, cursive;
+-family: Unbounded, cursive;
     font-size: 20px;
     font-weight: 400;
     color: #202020;
 }
+
+i {
+    color: gold;
+    text-shadow: 1px 1px 1px rgb(65, 190, 16);
+    padding:5px auto;
+       
+    
+}
+.result{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+

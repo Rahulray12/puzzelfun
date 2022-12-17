@@ -27,9 +27,9 @@
     <main>
         <!-- Selection of games -->
         <section class="game-menu">
-            <button>3X3 Puzzel</button>
-            <button>4X4 Puzzel</button>
-            <button>5X5 Puzzel</button>
+            <button>3X3</button>
+            <button>4X4</button>
+            <button>5X5</button>
         </section>
         <!-- The area where selected game dispays -->
         <section class="game-area">
@@ -37,10 +37,18 @@
         </section>
         <!-- buttons for user to start and pause the game, and time and score updated accordingly -->
         <section class="function">
-            <button id="shuffle">Start</button>
-            <button id="pause">Pause</button>
-            <p class="result">Time Spend: <span id="timer">0</span><span>s</span></p>
-            <p class="result">Win: <span id="score">0</span></p>
+            <div>
+                <button id="shuffle">Start</button>
+                <button id="pause">Pause</button>
+            </div>
+            <div>
+                <button class="game-func" id="shuffle">Start</button>
+                <button class="game-func" id="pause">Pause</button>
+            </div>
+            <div class="result">
+                <p><i class="fa-regular fa-clock fa-xl"></i> <span id="timer">0</span><span>s</span></p>
+                <p><i class="fa-solid fa-medal fa-xl"></i> <span id="score">0</span></p>
+            </div>        
         </section>     
      </main>
      <!-- footer: keep in touch -->
