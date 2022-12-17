@@ -17,22 +17,30 @@
 <body>
     <!-- Heading -->
     <header>
-        <h1>Puzzel Fun</h1>
+        <h1>
+            <img class="logo" src="assets/img/logo/logo1.png" alt="logo"> Puzzel Fun
+        </h1>
+        <button>
+
+        </button>
     </header>
     <main>
         <!-- Selection of games -->
-        <section id="game-menu">
+        <section class="game-menu">
             <button>3X3 Puzzel</button>
             <button>4X4 Puzzel</button>
             <button>5X5 Puzzel</button>
         </section>
         <!-- The area where selected game dispays -->
-        <section id="game-area">
+        <section class="game-area">
 
         </section>
         <!-- buttons for user to start and pause the game, and time and score updated accordingly -->
-        <section id="function">
-
+        <section class="function">
+            <button id="shuffle">Start</button>
+            <button id="pause">Pause</button>
+            <p class="result">Time Spend: <span id="timer">0</span><span>s</span></p>
+            <p class="result">Win: <span id="score">0</span></p>
         </section>     
      </main>
      <!-- footer: keep in touch -->

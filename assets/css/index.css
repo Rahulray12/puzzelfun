@@ -10,6 +10,8 @@
 
 body {
     font-family: Unbounded, cursive;
+    background-color: whitesmoke;
+    text-align: center;
     color: #202020;
     font-size: 20px;
     font-weight: 400;
@@ -18,4 +20,18 @@ body {
 /* Heading and Modal */
 h1 {
     font-family: 'Rubik Gemstones', cuesive;
+    color: #5a093f;
+    font-size: 50%;
+}
+.logo {
+    height:35px;
+    width:35px;
+    /* margin-right:5px; */
+
+}
+.function {
+    font-family: Unbounded, cursive;
+    font-size: 20px;
+    font-weight: 400;
+    color: #202020;
 }
