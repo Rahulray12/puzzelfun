@@ -87,6 +87,8 @@ button:active{
 /* Game Guide background */
 .guide-container {
     font-family:Lato, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
     background-color: rgba(226, 222, 166, 0.6);
     display: none;
     position: fixed;
@@ -98,5 +100,18 @@ button:active{
     height: 100%;
     overflow: auto;
 }
-
+/* Game Instruction page */
+.guide-header, 
+.guide-footer {
+    background-color: rgb(79, 82, 231);
+    color: rgb(250, 238, 238);
+    margin:5px, auto;
+}
+.guide-desc {
+    background-color: rgb(250, 238, 238);
+    width:80%;
+    position: relative;
+    border:4px ridge rgb(177, 178, 231);
+    animation-name: ;
+    animation-duration: 0.5s;
 }
