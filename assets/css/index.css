@@ -111,6 +111,7 @@ button:active{
 .guide-desc {
     background-color: rgb(250, 238, 238);
     width:80%;
+    margin:5px, auto;
     position: relative;
     border:4px ridge rgb(177, 178, 231);
     /* Animates zoom effect on loading the page */
@@ -120,10 +121,22 @@ button:active{
 }
 /* Zooming effect for game guide page */
 @keyframes game-guide-zoom {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+    to {
         transform: scale(1.1);
     }
+}
+/* Close button on the game instruction */
+.close {
+    color: rgb(250, 238, 238);
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+.close:hover,
+.close.focus {
+    color: #202020;
+    cursor: pointer;
 }
