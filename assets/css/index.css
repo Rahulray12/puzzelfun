@@ -88,13 +88,14 @@ button:active{
 /* Game Guide background */
 .guide-container {
     font-family:Lato, sans-serif;
+    font-size:small;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.1px;
     background-color: rgba(226, 222, 166, 0.6);
     display: none;
     position: fixed;
     z-index: 1;
-    margin-top: 60px;
+    margin-top: 160px;
     left:0;
     top:0;
     width:100%;
@@ -106,17 +107,23 @@ button:active{
 .guide-footer {
     background-color: rgb(79, 82, 231);
     color: rgb(250, 238, 238);
-    margin:5px, auto;
+    padding:10px;
 }
 .guide-desc {
+    margin:5px;
+}
+.game-guide {
     background-color: rgb(250, 238, 238);
-    width:80%;
-    margin:5px, auto;
+    font-weight: 800;
+    width: 80%;
+    margin:auto;
     position: relative;
+    margin-top: 20px;
     border:4px ridge rgb(177, 178, 231);
     /* Animates zoom effect on loading the page */
+ 
     animation-name: game-guide-zoom;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 /* Zooming effect for game guide page */
@@ -125,7 +132,7 @@ button:active{
         transform: scale(1);
     }
     to {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 /* Close button on the game instruction */
