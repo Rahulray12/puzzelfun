@@ -148,6 +148,7 @@ button:active{
     cursor: pointer;
 }
 
+/* difficulty list at the game guide */
 h3 i {
     padding-left: 5px;
     color: yellow;
@@ -162,4 +163,21 @@ ul {
 }
 li {
     list-style: circle inside;
+}
+/* Footer */
+footer {
+    width: 100%;
+    margin-top: 20px;
+    height: 40px;
+    align-items: center;
+    border: 5px groove #e5eaf9;
+    position: fixed;
+    bottom: 0;
+}
+
+footer h2 {
+    text-transform: capitalize;
+    font-size: 120%;
+    text-align: center;
+    color: #5a093f;
 }
