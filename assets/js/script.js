@@ -15,15 +15,31 @@ function closeGuide() {
 }
 close.addEventListener("click", closeGuide);
 
-function runGame(type)
-function start()
-function moveTile()
+function runGame(type) {
+
+}
+function start() {
+
+}
+function moveTile() {
+
+}
 function setTimer() {
-    start, pause, stop
-} 
-function Checkwin()
-function ncrementalScore()
-function display3puzzel()
-function display4puzzel()
-function display5puzzel()
+
+}
+function Checkwin() {
+
+}
+function ncrementalScore() {
+
+}
+function display3puzzel() {
+
+}
+function display4puzzel() {
+
+}
+function display5puzzel() {
+    
+}
 
