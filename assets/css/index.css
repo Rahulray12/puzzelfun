@@ -168,8 +168,8 @@ li {
 /* Footer */
 footer {
     width: 100%;
-    margin-top: 20px;
-    height: 40px;
+    margin-top: 10px;
+    height: 35px;
     align-items: center;
     border: 5px groove #e5eaf9;
     position: fixed;
@@ -178,7 +178,7 @@ footer {
 
 footer h2 {
     text-transform: capitalize;
-    font-size: 120%;
+    font-size: 110%;
     text-align: center;
     color: #5a093f;
 }
@@ -187,30 +187,27 @@ footer h2 {
 .game-area {
     background:url('../img/game-bkgrd.jpeg') no-repeat;
     width: 100%;
-    height: 300px;
+    height: 280px;
     position: relative;
     margin-top: 10px;
-}
-
-#puzzle {
-    position: absolute;
-    top: 50px;
-    background-color: whitesmoke;
-    width: 80%;
-    border: 4px solid rgb(13, 15, 13);
-    margin:auto;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#puzzle {
+    background-color: whitesmoke;
+    border: 4px solid rgb(13, 15, 13);
+    margin:auto;
+    text-align: center;   
 }
 
 td {
     margin: 5px;
     padding: 5px;
     border: 1px solid;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     text-align: center;
     font-weight: bold;
     font-size: large;

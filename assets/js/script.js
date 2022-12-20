@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function runGame(gameType) {
-
+        document.getElementById("puzzle").innerHTML = '';
         if (gameType === "3") {
             display3puzzle();
         } else if (gameType === "4") {
