@@ -78,7 +78,7 @@ button:active{
 }
 
 .game-menu,.game-func {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -189,6 +189,7 @@ footer h2 {
     width: 100%;
     height: 300px;
     position: relative;
+    margin-top: 10px;
 }
 
 #puzzel {
