@@ -182,3 +182,46 @@ footer h2 {
     text-align: center;
     color: #5a093f;
 }
+
+/* Set Style for game area */
+.game-area {
+    background:url('../img/game-bkgrd.jpeg') no-repeat;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+#puzzel {
+    position: absolute;
+    top: 50px;
+    background-color: whitesmoke;
+    width: 80%;
+    border: 4px solid rgb(13, 15, 13);
+    margin:auto;
+    text-align: center;
+}
+
+.tile {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+#empty {
+    background-color: #0f0f0f;
+}
+
+.cell:hover {
+    background-color: #0f0f0f;
+    cursor: pointer;
+}
+
+#empty:hover {
+    background-color: #0f0f0f;
+    cursor: pointer;
+}

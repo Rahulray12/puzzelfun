@@ -23,7 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("guide-modal").style.display = "none";
     });
 
- 
+    // need to think how to trigger checkwin
+
+    // Default game is 3X3 puzzel when DOM is loaded
+    runGame("3");
 
 });
 
@@ -65,6 +68,7 @@ function ncrementalScore() {
 
 }
 function display3puzzel() {
+    
 
 }
 function display4puzzel() {
