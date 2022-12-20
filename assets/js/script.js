@@ -7,45 +7,38 @@ document.addEventListener("DOMContentLoaded", function() {
 		button.addEventListener("click", function() {
 			if (this.getAttribute("data-type") === "guide") {
 				openGuide();
-			} else {
-                if (this.getAttribute("data-type") === "start") {
+			} else if (this.getAttribute("data-type") === "start") {
                     shuffle(); 
-            	} else {
-                    if (this.getAttribute("data-type") === "pause") {
+            } else if (this.getAttribute("data-type") === "pause") {
                         pause(); 
-                    } else {let gameType = this.getAttribute("data-type");
+            } else {let gameType = this.getAttribute("data-type");
 				runGame(gameType);
 			}
 		});
 	}
 
+    // Close the game guide when clicking on (x)
+    document.getElementsByClassName("close")[0].addEventListener("click", function
+        closeGuide() {
+            document.getElementById("guide-modal").style.display = "none";
+    });
 
-})
+ 
+
+});
 
 
 
 
 // Display game guide when user clicking on 'Game Guide' button
-
 function openGuide() {
     let guideModal = document.getElementById("guide-modal");
     let guideBtn = document.getElementById("guide-btn");
-
     guideModal.style.display = "block";
 }
-//guideBtn.addEventListener("click", openGuide);
-
-// Close the game guide when clicking on (x)
-
-function closeGuide() {
-    let close = document.getElementsByClassName("close")[0];
-    guideModal.style.display = "none";
-}
-//close.addEventListener("click", closeGuide);
 
 
-
-function runGame(type) {
+function runGame(gameType) {
 
 }
 function shuffle() {
@@ -63,7 +56,7 @@ function pause() {
 }
 
 function stop() {
-
+    
 }
 function Checkwin() {
 
