@@ -20,7 +20,7 @@
         <h1>
             <img class="logo" src="assets/img/logo/logo1.png" alt="logo"> Puzzel Fun
         </h1>
-        <button id="guide-btn">Game Guide</button>
+        <button data-type="guide" id="guide-btn">Game Guide</button>
         <div class="guide-container" id="guide-modal">
             <div class="game-guide">
                 <div class="guide-header">
@@ -40,7 +40,7 @@
                             <li>3x3 Puzzel: Easy</li>
                             <li>4x4 Puzzel: Medium</li>
                             <li>5x5 Puzzel: Hard</li>
-                        </ul>
+                        </ul>                  
                     <br>
                     <p>You will be timed when 'Start' button clicked but feel free to pause the game at any occasion.</p>
                     </p>
@@ -55,9 +55,9 @@
     <main>
         <!-- Selection of games -->
         <section class="game-menu">
-            <button>3X3<i id="green" class="fa-solid fa-puzzle-piece"></i></button>
-            <button>4X4<i id="orange" class="fa-solid fa-puzzle-piece"></i></button>
-            <button>5X5<i id="purple" class="fa-solid fa-puzzle-piece"></i></button>
+            <button data-type="3">3X3<i id="green" class="fa-solid fa-puzzle-piece"></i></button>
+            <button data-type="4">4X4<i id="orange" class="fa-solid fa-puzzle-piece"></i></button>
+            <button data-type="5">5X5<i id="purple" class="fa-solid fa-puzzle-piece"></i></button>
         </section>
         <!-- The area where selected game dispays -->
         <section class="game-area">
@@ -66,8 +66,8 @@
         <!-- buttons for user to start and pause the game, and time and score updated accordingly -->
         <section class="function">
             <div class="game-func">
-                <button class="game-func" id="shuffle">Start</button>
-                <button class="game-func" id="pause">Pause</button>
+                <button data-type="start" class="game-func" id="shuffle">Start</button>
+                <button data-type="pause" class="game-func" id="pause">Pause</button>
             </div>
             <div class="game-func">
                 <p><i class="fa-regular fa-clock fa-xl"></i> <span id="timer">0</span><span>s</span></p>

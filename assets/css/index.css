@@ -111,7 +111,8 @@ button:active{
 }
 .guide-desc {
     margin:5px;
-}
+    text-align: justify;
+} 
 .game-guide {
     background-color: rgb(250, 238, 238);
     font-weight: 800;

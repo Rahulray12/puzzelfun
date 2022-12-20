@@ -1,30 +1,68 @@
+// Run game after window onload 
+// Get all the buttons and set listners to take the action when buttons are clicked
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByTagName("button");
+
+	for (let button of buttons) {
+		button.addEventListener("click", function() {
+			if (this.getAttribute("data-type") === "guide") {
+				openGuide();
+			} else {
+                if (this.getAttribute("data-type") === "start") {
+                    shuffle(); 
+            	} else {
+                    if (this.getAttribute("data-type") === "pause") {
+                        pause(); 
+                    } else {let gameType = this.getAttribute("data-type");
+				runGame(gameType);
+			}
+		});
+	}
+
+
+})
+
+
+
+
 // Display game guide when user clicking on 'Game Guide' button
 
-let guideModal = document.getElementById("guide-modal");
-let guideBtn = document.getElementById("guide-btn");
-let close = document.getElementsByClassName("close")[0];
 function openGuide() {
+    let guideModal = document.getElementById("guide-modal");
+    let guideBtn = document.getElementById("guide-btn");
+
     guideModal.style.display = "block";
 }
-guideBtn.addEventListener("click", openGuide);
+//guideBtn.addEventListener("click", openGuide);
 
 // Close the game guide when clicking on (x)
 
 function closeGuide() {
+    let close = document.getElementsByClassName("close")[0];
     guideModal.style.display = "none";
 }
-close.addEventListener("click", closeGuide);
+//close.addEventListener("click", closeGuide);
+
+
 
 function runGame(type) {
 
 }
-function start() {
+function shuffle() {
 
 }
 function moveTile() {
 
 }
-function setTimer() {
+function timer() {
+
+}
+
+function pause() {
+
+}
+
+function stop() {
 
 }
 function Checkwin() {
