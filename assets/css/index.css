@@ -200,6 +200,9 @@ footer h2 {
     border: 4px solid rgb(13, 15, 13);
     margin:auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tile {
