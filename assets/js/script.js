@@ -23,30 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("guide-modal").style.display = "none";
     });
 
-      
-       
-    // Display game guide when user clicking on 'Game Guide' button
-    function openGuide() {
-    let guideModal = document.getElementById("guide-modal");
-    let guideBtn = document.getElementById("guide-btn");
-    guideModal.style.display = "block";
-    }
-
-    function runGame(gameType) {
-        document.getElementById("puzzle").innerHTML = '';
-        if (gameType === "3") {
-            display3puzzle();
-        } else if (gameType === "4") {
-            display4puzzle();
-        } else if (gameType === "5") {
-            display5puzzle();
-        } else {
-            alert(`Game type ${gameType} not found`);
-            throw `Erro game type ${gameType}, aborting!`;
-        }
-
-    }
-      
+     
 
     // need to think how to trigger checkwin
 
@@ -55,9 +32,34 @@ document.addEventListener("DOMContentLoaded", function() {
     
 });
 
+// Display game guide when user clicking on 'Game Guide' button
+function openGuide() {
+    let guideModal = document.getElementById("guide-modal");
+    let guideBtn = document.getElementById("guide-btn");
+    guideModal.style.display = "block";
+    }
+
+
+// After user choose the puzzle to play, the default puzzle will be 
+// cleared and repaced with the selected one
+function runGame(gameType) {
+    document.getElementById("puzzle").innerHTML = '';
+    if (gameType === "3") {
+        display3puzzle();
+    } else if (gameType === "4") {
+        display4puzzle();
+    } else if (gameType === "5") {
+        display5puzzle();
+    } else {
+        alert(`Game type ${gameType} not found`);
+        throw `Erro game type ${gameType}, aborting!`;
+    }
+
+}
+
 // creat table
 function createTable(type) {
-    let numArray=[];
+    let numArray= [];
     const myTable = document.createElement("table");
     myTable.id = "myTable";
     document.getElementById("puzzle").appendChild(myTable);
@@ -78,7 +80,8 @@ function createTable(type) {
     }
 
     for (let i = 0; i < type * type; i++) {
-        let tile = document.getElementsByTagName("td");
+        numArray[i] = i+1;
+        let tile = document.getElementById(i);
         if (numArray[i] == type * type) {
             tile.innerHTML = "";
             tile.id = "empty";
