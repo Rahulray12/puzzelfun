@@ -17,11 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 	}
 
-    // Close the game guide when clicking on (x)
-    document.getElementsByClassName("close")[0].addEventListener("click", function
-        closeGuide() {
-            document.getElementById("guide-modal").style.display = "none";
-    });
+    //activate close game guide function when click on 'x'
+    document.getElementsByClassName("close")[0].addEventListener("click", closeGuide);
 
      
 
@@ -32,16 +29,21 @@ document.addEventListener("DOMContentLoaded", function() {
     
 });
 
-// Display game guide when user clicking on 'Game Guide' button
+/**Display game guide when user clicking on 'Game Guide' button*/
 function openGuide() {
     let guideModal = document.getElementById("guide-modal");
     let guideBtn = document.getElementById("guide-btn");
     guideModal.style.display = "block";
     }
 
+/**Close the game guide*/
+function closeGuide() {
+    document.getElementById("guide-modal").style.display = "none";
+}
 
 // After user choose the puzzle to play, the default puzzle will be 
 // cleared and repaced with the selected one
+/** To display the puzzle game chosen by user */
 function runGame(gameType) {
     document.getElementById("puzzle").innerHTML = '';
     if (gameType === "3") {
@@ -57,14 +59,15 @@ function runGame(gameType) {
 
 }
 
-// Creat table and fill in the tiles with numbers from 1 to their Type X Type (eg:3x3)
+// Create table and fill in the tiles with numbers from 1 to their Type X Type (eg:3x3)
+/**Create puzzel tables by type */
 function createTable(type) {
     let numArray= [];
-    const myTable = document.createElement("table"); // creat tableand insert it to puzzel div
+    const myTable = document.createElement("table"); // create table and insert it to puzzel div
     myTable.id = "myTable";
     document.getElementById("puzzle").appendChild(myTable);
     
-    // creat table tr and tb content and add id to each tile
+    // create table tr and tb content and add id to each tile
     let Count = 0; 
     for (let i = 0; i < type; i++) {
         const row = document.createElement("tr");
@@ -87,6 +90,7 @@ function createTable(type) {
     }
 }      
 // shuffle the numbers randomly to start the game
+/**Randomly pick the numbers from array and asign them to puzzel tiles*/
 function shuffle() {
     let cell = document.getElementsByTagName("td");
     let numArray = new Array(parseInt(cell.length));
@@ -94,10 +98,14 @@ function shuffle() {
     for (let i = 0; i < cell.length; i++) {
         numArray[i] = i+1;
     }
+    
+    //This piece of code is taken from 'stackoverflow' to randomise an array
     for (let i = numArray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [numArray[i], numArray[j]] = [numArray[j], numArray[i]];
-    }        
+    }
+    
+    
     for (let i = 0; i < cell.length; i++) {
         let tile = document.getElementById(i);
         if (numArray[i] == numArray.length) {
