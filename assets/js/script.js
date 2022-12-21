@@ -74,7 +74,7 @@ function createTable(type) {
         for (j = 0; j < type; j++) {
             const tile = document.createElement("td");
             tile.id = Count;
-            tile.addEventListener("click", moveTile);
+            tile.addEventListener("click", checkMoveTile);
             row.appendChild(tile);
             Count++;          
         }
@@ -98,7 +98,7 @@ function shuffle() {
     for (let i = 0; i < cell.length; i++) {
         numArray[i] = i+1;
     }
-    
+
     //This piece of code is taken from 'stackoverflow' to randomise an array
     for (let i = numArray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -108,14 +108,14 @@ function shuffle() {
     
     for (let i = 0; i < cell.length; i++) {
         let tile = document.getElementById(i);
-        if (numArray[i] == numArray.length) {
+        if (numArray[i] !== numArray.length) {
+            tile.innerHTML = numArray[i];
+            tile.className = "tile";
+            tile.style.backgroundColor = "whitesmoke";            
+        } else {
             tile.innerHTML = "";
             tile.className = "empty"
             tile.style.backgroundColor = "#0f0f0f";
-        } else {
-            tile.innerHTML = numArray[i];
-            tile.className = "tile";
-            tile.style.backgroundColor = "whitesmoke";
         }
     }
 }
@@ -141,7 +141,41 @@ function display5puzzle() {
 function start() {
 
 }
-function moveTile() {
+function checkMoveTile() {
+    let tiles = document.getElementsByTagName('td')
+    //**Check adjacent cell if it is empty  */
+    function canMove(tile){
+        const tileColumn = tile.cellIndex;
+        const tileRow = tile.parentElement.rowIndex;
+        const emptyTile = document.getElementById('empty');
+        const emptyTileColumn = emptyTile.cellIndex;
+        const emptyTileRow = emptyTile.parentElement.rowIndex;
+      
+        return (tileColumn === emptyTileColumn && tileRow === emptyTileRow + 1) ||
+               (tileColumn === emptyTileColumn && tileRow === emptyTileRow - 1) ||
+               (tileRow === emptyTileRow && tileColumn === emptyTileColumn + 1) ||
+               (tileRow === emptyTileRow && tileColumn === emptyTileColumn - 1);
+      };
+      
+    /**Move the tile when it is next to the empty cell */
+    function moveTile(element){
+        // Select the empty place
+        const emptyTile = document.getElementById('empty');
+        emptyTile.innerHTML = element.innerHTML;
+        emptyTile.classList.remove('empty');
+        emptyTile.classList.add('tile');
+        element.innerHTML = '';
+        emptyTile.classList.remove('tile');
+        element.classList.add('empty');
+      };
+
+      for (let tile of tiles) {
+        tile.addEventListener('click', () => {
+          if (canMove(tile)) {
+            moveTile(tile);
+           }
+          });
+      };  
 
 }
 function timer() {
