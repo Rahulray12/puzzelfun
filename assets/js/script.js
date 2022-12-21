@@ -120,19 +120,19 @@ function shuffle() {
     }
 }
     
-/**display 3x3puzzle*/
+/**Display 3x3puzzle*/
 function display3puzzle() {
     let type=3;
     createTable(type);
 }
 
-/**display 4x4puzzle*/
+/**Display 4x4puzzle*/
 function display4puzzle() {
     let type=4;
     createTable(type);
 }
 
-/**display 5x5puzzle*/
+/**Display 5x5puzzle*/
 function display5puzzle() {
     let type=5;
     createTable(type);
@@ -141,36 +141,41 @@ function display5puzzle() {
 function start() {
 
 }
+
+/**Find the tiles can be moved and define the way of swapping between numbered tile and empty tile */
 function checkMoveTile() {
     let tiles = document.getElementsByTagName('td')
-    //**Check adjacent cell if it is empty  */
+    /**Check if a tiles is adjascent to the empty tile*/
     function canMove(tile){
         const tileColumn = tile.cellIndex;
         const tileRow = tile.parentElement.rowIndex;
-        const emptyTile = document.getElementById('empty');
+        const emptyTile = document.getElementsByClassName('empty')[0];
         const emptyTileColumn = emptyTile.cellIndex;
         const emptyTileRow = emptyTile.parentElement.rowIndex;
-      
+        //list all 4 possible positions can be adjascent to empty tile (defined by column and row), 
+        // only the tiles sitting on one or more of the below positions will return true, which means 'can be moved'.
+
         return (tileColumn === emptyTileColumn && tileRow === emptyTileRow + 1) ||
                (tileColumn === emptyTileColumn && tileRow === emptyTileRow - 1) ||
                (tileRow === emptyTileRow && tileColumn === emptyTileColumn + 1) ||
                (tileRow === emptyTileRow && tileColumn === emptyTileColumn - 1);
       };
       
-    /**Move the tile when it is next to the empty cell */
+    /**Move one of the tiles returned true from canMove function and swap it with empty cell when user clcking on it */
     function moveTile(element){
-        // Select the empty place
-        const emptyTile = document.getElementById('empty');
+        const emptyTile = document.getElementsByClassName('empty')[0];
         emptyTile.innerHTML = element.innerHTML;
         emptyTile.classList.remove('empty');
         emptyTile.classList.add('tile');
+        emptyTile.style.backgroundColor = "whitesmoke";
         element.innerHTML = '';
-        emptyTile.classList.remove('tile');
+        element.classList.remove('tile');
         element.classList.add('empty');
+        element.style.backgroundColor = "#0f0f0f";
       };
 
       for (let tile of tiles) {
-        tile.addEventListener('click', () => {
+        tile.addEventListener('click', function() {
           if (canMove(tile)) {
             moveTile(tile);
            }
