@@ -93,24 +93,24 @@ function createTable(type) {
 }      
     // shuffle the numbers randomly to start the game
 function shuffle() {
-    let tile = document.getElementsByTagName("td");
-    let numArray = new Array(parseInt(tile.length));
+    let cell = document.getElementsByTagName("td");
+    let numArray = new Array(parseInt(cell.length));
     
-    for (let i = 0; i < tile.length; i++) {
+    for (let i = 0; i < cell.length; i++) {
         numArray[i] = i+1;
     }
     for (let i = numArray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [numArray[i], numArray[j]] = [numArray[j], numArray[i]];
     }        
-    for (let i of numArray) {
-    
-        if (numArray[i] == tile.length) {
-        tile.innerHTML = "";
-        tile.id = "empty";
+    for (let i = 0; i < cell.length; i++) {
+        var tile = document.getElementById(i);
+        if (numArray[i] == numArray.length) {
+            tile.innerHTML = "";
+            tile.className = "empty";
         } else {
-        tile.innerHTML = numArray[i];
-        tile.className = "tile";
+            tile.innerHTML = numArray[i];
+            tile.className = "tile";
         }
     }
 }
