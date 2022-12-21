@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			if (this.getAttribute("data-type") === "guide") {
 				openGuide();
 			} else if (this.getAttribute("data-type") === "start") {
-                shuffle(); 
+                start(); 
             } else if (this.getAttribute("data-type") === "pause") {
                 pause(); 
             } else {let gameType = this.getAttribute("data-type");
@@ -57,14 +57,14 @@ function runGame(gameType) {
 
 }
 
-// creat table
+// Creat table and fill in the tiles with numbers from 1 to their Type X Type (eg:3x3)
 function createTable(type) {
     let numArray= [];
-    const myTable = document.createElement("table");
+    const myTable = document.createElement("table"); // creat tableand insert it to puzzel div
     myTable.id = "myTable";
     document.getElementById("puzzle").appendChild(myTable);
     
-
+    // creat table tr and tb content and add id to each tile
     let Count = 0; 
     for (let i = 0; i < type; i++) {
         const row = document.createElement("tr");
@@ -73,12 +73,11 @@ function createTable(type) {
             tile.id = Count;
             tile.addEventListener("click", moveTile);
             row.appendChild(tile);
-            Count++;
-            
+            Count++;          
         }
         myTable.appendChild(row);
     }
-
+    //asign number to each tile in order
     for (let i = 0; i < type * type; i++) {
         numArray[i] = i+1;
         let tile = document.getElementById(i);
@@ -111,7 +110,7 @@ function display5puzzle() {
     createTable(type);
 }
 
-function shuffle() {
+function start() {
 
 }
 function moveTile() {
