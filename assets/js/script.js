@@ -79,19 +79,14 @@ function createTable(type) {
     }
        
     //asign number to each tile in ascending numeric order when loading the game
-    for (let i = 0; i < type * type; i++) {
+    for (let i = 0; i < type * type -1; i++) {
         numArray[i] = i+1;
         let tile = document.getElementById(i);
-        if (numArray[i] == type * type) {
-            tile.innerHTML = "";
-            tile.id = "empty";
-        } else {
             tile.innerHTML = numArray[i];
             tile.className = "tile";
-        }
     }
 }      
-    // shuffle the numbers randomly to start the game
+// shuffle the numbers randomly to start the game
 function shuffle() {
     let cell = document.getElementsByTagName("td");
     let numArray = new Array(parseInt(cell.length));
@@ -104,30 +99,32 @@ function shuffle() {
         [numArray[i], numArray[j]] = [numArray[j], numArray[i]];
     }        
     for (let i = 0; i < cell.length; i++) {
-        var tile = document.getElementById(i);
+        let tile = document.getElementById(i);
         if (numArray[i] == numArray.length) {
             tile.innerHTML = "";
-            tile.className = "empty";
+            tile.className = "empty"
+            tile.style.backgroundColor = "#0f0f0f";
         } else {
             tile.innerHTML = numArray[i];
             tile.className = "tile";
+            tile.style.backgroundColor = "whitesmoke";
         }
     }
 }
     
-// display3x3puzzle
+/**display 3x3puzzle*/
 function display3puzzle() {
     let type=3;
     createTable(type);
 }
 
-// display4x4puzzle
+/**display 4x4puzzle*/
 function display4puzzle() {
     let type=4;
     createTable(type);
 }
 
-// display4x4puzzle
+/**display 5x5puzzle*/
 function display5puzzle() {
     let type=5;
     createTable(type);
