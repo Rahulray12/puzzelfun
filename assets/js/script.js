@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			if (this.getAttribute("data-type") === "guide") {
 				openGuide();
 			} else if (this.getAttribute("data-type") === "start") {
-                start(); 
+                shuffle(); 
             } else if (this.getAttribute("data-type") === "pause") {
                 pause(); 
             } else {let gameType = this.getAttribute("data-type");
@@ -77,21 +77,44 @@ function createTable(type) {
         }
         myTable.appendChild(row);
     }
-    //asign number to each tile in order
+       
+    //asign number to each tile in ascending numeric order when loading the game
     for (let i = 0; i < type * type; i++) {
         numArray[i] = i+1;
         let tile = document.getElementById(i);
         if (numArray[i] == type * type) {
             tile.innerHTML = "";
             tile.id = "empty";
-            } else {
+        } else {
             tile.innerHTML = numArray[i];
             tile.className = "tile";
-            }
-        }      
-        
+        }
+    }
+}      
+    // shuffle the numbers randomly to start the game
+function shuffle() {
+    let tile = document.getElementsByTagName("td");
+    let numArray = new Array(parseInt(tile.length));
+    
+    for (let i = 0; i < tile.length; i++) {
+        numArray[i] = i+1;
+    }
+    for (let i = numArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [numArray[i], numArray[j]] = [numArray[j], numArray[i]];
+    }        
+    for (let i of numArray) {
+    
+        if (numArray[i] == tile.length) {
+        tile.innerHTML = "";
+        tile.id = "empty";
+        } else {
+        tile.innerHTML = numArray[i];
+        tile.className = "tile";
+        }
+    }
 }
-
+    
 // display3x3puzzle
 function display3puzzle() {
     let type=3;
