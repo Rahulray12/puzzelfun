@@ -178,7 +178,7 @@ function checkMoveTile() {
         tile.addEventListener('click', function() {
           if (canMove(tile)) {
             moveTile(tile);
-            checkWin(tile);
+            setTimeout(checkWin, 500); 
            }
           });
       };  
