@@ -168,7 +168,7 @@ function timing() {
     clock.textContent = currentTime;
     timer = setTimeout(timing, 1000);
 }
-
+/**Pause timer */
 function pause() {
 
 }
@@ -237,12 +237,17 @@ function checkWin() {
     
     if(win){
         alert("Congratulations, You spend" + clock.innerHTML + "s solve the puzzle!")
+        sumScore();
         location.reload();
         startButton.textContent = "Start";
         startButton.style.backgroundColor = "green";
         clearTimeout(timer);
     }
 }
-function incrementalScore() {
 
+/**Count the times of solving the puzzle at each puzzle type*/
+function sumScore() {
+    let pass = document.getElementById("score").innerHTML;
+    let currentScore = parseInt(pass);
+    pass = ++currentScore;
 }

@@ -74,6 +74,11 @@ button:active{
     background-color: green;
 }
 
+#pause {
+    background-color: pink;
+}
+
+
 .game-func i {
     color: gold;
     text-shadow: 1px 1px 1px rgb(65, 190, 16);
