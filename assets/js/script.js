@@ -196,20 +196,22 @@ function stop() {
     
 }
 function checkWin() {
-    // win=true;
-    let tiles=document.getElementsByClassName("tile");   
-    for(let i=0; i<tiles.length -1; i++){
+    win = true;
+    let tiles=document.getElementsByTagName("td");
+    for(let i=0; i<tiles.length-1; i++){
         var cell = document.getElementById(i);
-        if(cell.innerHTML==i+1){
+        if(cell.textContent==i+1){
             continue;
-        }else{
-            alert("Congratulations！You solve the puzzle!!")
+        }else {
+            win = false;
         }
+        
     }
-
-
+    if(win){
+        alert("Congratulations, You solve the puzzle!!")
+        location.reload()
+    }
+}
 function incrementalScore() {
 
 }
-
-
