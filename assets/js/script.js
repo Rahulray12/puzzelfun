@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 start(); 
             } else if (this.getAttribute("data-type") === "pause") {
                 pause(); 
-            } else {let gameType = this.getAttribute("data-type");
+            } else if (this.getAttribute("data-type") === "resume") {
+                resume(); 
+            }else {let gameType = this.getAttribute("data-type");
 				runGame(gameType);
 			}
 		});
@@ -28,9 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
 /**Display game guide when user clicking on 'Game Guide' button*/
 function openGuide() {
     let guideModal = document.getElementById("guide-modal");
@@ -45,10 +44,6 @@ function closeGuide() {
 
 // After user choose the puzzle to play, the default puzzle will be 
 // cleared and repaced with the selected one
-let startButton = document.getElementById("start");
-let clock = document.getElementById("timer");
-let currentTime;
-let timer;
 /** To display the puzzle game chosen by user */
 function runGame(gameType) {
     document.getElementById("puzzle").innerHTML = '';
@@ -106,14 +101,18 @@ function createTable(type) {
     }
        
     //asign number to each tile in ascending numeric order when loading the game
-    for (let i = 0; i < type * type -1; i++) {
-        numArray[i] = i+1;
+    for (let i = 0; i < type * type-1; i++) {
+        if (numArray[i] = i+1) {
         let tile = document.getElementById(i);
             tile.innerHTML = numArray[i];
             tile.className = "tile";
+        }else {
+        tile.innerHTML = "";
+        tile.className = "empty"
+        tile.style.backgroundColor = "#0f0f0f";
+        }
     }
 }
-
 
 // shuffle the numbers randomly to start the game
 /**Randomly pick the numbers from array and asign them to puzzel tiles*/
@@ -171,8 +170,9 @@ function start() {
     startButton.innerHTML = "Restart";
     startButton.style.backgroundColor = "orange";
     startButton.style.color = "black";
-    setTimeout(timing, 1000);
     currentTime = 0;
+    setTimeout(timing, 1000);
+    
     clock.textContent = currentTime;
       
     if(startButton.innerHTML = "Restart") {
@@ -180,15 +180,29 @@ function start() {
     }
 }
 
+let startButton = document.getElementById("start");
+let clock = document.getElementById("timer");
+let currentTime;
+let timer;
+let active = 0
 /**Start timing in seconds  */
 function timing() {
     currentTime++;
     clock.textContent = currentTime;
     timer = setTimeout(timing, 1000);
 }
+
+function resume () {
+    if(!active) {
+        active = 1;
+        timing();
+    }
+}
+
 /**Pause timer */
 function pause() {
-
+    clearTimeout(timer);
+    active=0;       
 }
 
 /**Find the tiles can be moved and define the way of swapping between numbered tile and empty tile */

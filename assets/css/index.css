@@ -75,9 +75,12 @@ button:active{
 }
 
 #pause {
-    background-color: pink;
+    background-color: rgb(190, 90, 115);
 }
 
+#resume {
+    background-color: rgb(84, 84, 179);
+}
 
 .game-func i {
     color: gold;
