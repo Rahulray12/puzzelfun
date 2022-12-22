@@ -70,6 +70,10 @@ button:active{
     padding:2px 0px 3px 2px;
 }
 
+#timer {
+    background-color: green;
+}
+
 .game-func i {
     color: gold;
     text-shadow: 1px 1px 1px rgb(65, 190, 16);

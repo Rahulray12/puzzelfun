@@ -139,6 +139,19 @@ function display5puzzle() {
 }
 
 function start() {
+    shuffle();
+    let startButton = document.getElementById("start");
+    let clock = document.getElementById("timer")
+    let currentTime;
+    startButton.innerHTML = "Restart";
+    startButton.style.backgroundColor = "yellow";
+    setTimeout(timing, 1000);
+    currentTime = 0;
+    clock.textContent = currentTime;
+
+
+
+
 
 }
 
@@ -178,14 +191,19 @@ function checkMoveTile() {
         tile.addEventListener('click', function() {
           if (canMove(tile)) {
             moveTile(tile);
-            setTimeout(checkWin, 500); 
+            setTimeout(checkWin, 500); //checkWin runs faster than moveTile and the winning message appears
+            //right after the final click but before the tile moves to the right spot. So checkWin is set half second 
+            //delayed after moveTile.
            }
           });
       };  
 
 }
-function timer() {
-
+/**Start timing in seconds  */
+function timing() {
+    currentTime++;
+    clock.textContent = currentTime;
+    let timer = setTimeout(timing, 1000);
 }
 
 function pause() {
@@ -213,6 +231,7 @@ function checkWin() {
         location.reload();
         // startButton.textContent = "Start";
         // startButton.style.backgroundColor = "green";
+        // let timer = setTimeout(timing, 1000);
         // clearTimeout(timer);
     }
 }
