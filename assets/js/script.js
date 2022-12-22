@@ -45,15 +45,37 @@ function closeGuide() {
 
 // After user choose the puzzle to play, the default puzzle will be 
 // cleared and repaced with the selected one
+let startButton = document.getElementById("start");
+let clock = document.getElementById("timer");
+let currentTime;
+let timer;
 /** To display the puzzle game chosen by user */
 function runGame(gameType) {
     document.getElementById("puzzle").innerHTML = '';
     if (gameType === "3") {
         display3puzzle();
+        startButton.textContent = "Start";
+        startButton.style.backgroundColor = "green";
+        clearTimeout(timer);
+        clock.innerText = "0";
+        document.getElementById("score").innerText = "0";
+        
     } else if (gameType === "4") {
         display4puzzle();
+        startButton.textContent = "Start";
+        startButton.style.backgroundColor = "green";
+        clock.innerText = "0";
+        document.getElementById("score").innerText = "0";
+        clearTimeout(timer);
+
     } else if (gameType === "5") {
         display5puzzle();
+        startButton.textContent = "Start";
+        startButton.style.backgroundColor = "green";
+        clock.innerText = "0";
+        document.getElementById("score").innerText = "0";
+        clearTimeout(timer);
+
     } else {
         alert(`Game type ${gameType} not found`);
         throw `Erro game type ${gameType}, aborting!`;
@@ -143,10 +165,6 @@ function display5puzzle() {
 }
 
 
-let startButton = document.getElementById("start");
-let clock = document.getElementById("timer");
-let currentTime;
-let timer;
 /**Satrt a new game and begin to time. Allow user to restart another game if they want to exit the current game*/
 function start() {
     shuffle();
@@ -238,7 +256,7 @@ function checkWin() {
     if(win){
         alert("Congratulations, You spend" + clock.innerHTML + "s solve the puzzle!")
         sumScore();
-        location.reload();
+        // location.reload();
         startButton.textContent = "Start";
         startButton.style.backgroundColor = "green";
         clearTimeout(timer);
@@ -247,7 +265,7 @@ function checkWin() {
 
 /**Count the times of solving the puzzle at each puzzle type*/
 function sumScore() {
-    let pass = document.getElementById("score").innerHTML;
-    let currentScore = parseInt(pass);
-    pass = ++currentScore;
+    
+    let currentScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++currentScore;
 }
