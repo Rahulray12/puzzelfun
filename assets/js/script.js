@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
          
     // Default game is 3X3 puzzle when DOM is loaded
     runGame("3");
+
     
 });
 
@@ -141,29 +142,35 @@ function display5puzzle() {
     createTable(type);
 }
 
+
+let startButton = document.getElementById("start");
+let clock = document.getElementById("timer");
+let currentTime;
+let timer;
 /**Satrt a new game and begin to time. Allow user to restart another game if they want to exit the current game*/
 function start() {
     shuffle();
-    let startButton = document.getElementById("start");
-    let clock = document.getElementById("timer");
-    let currentTime;
-    let timer;
     startButton.innerHTML = "Restart";
     startButton.style.backgroundColor = "orange";
     startButton.style.color = "black";
     setTimeout(timing, 1000);
     currentTime = 0;
     clock.textContent = currentTime;
-
-    /**Start timing in seconds  */
-    function timing() {
-    currentTime++;
-    clock.textContent = currentTime;
-    timer = setTimeout(timing, 1000);
-    }
+      
     if(startButton.innerHTML = "Restart") {
         clearTimeout(timer);
     }
+}
+
+/**Start timing in seconds  */
+function timing() {
+    currentTime++;
+    clock.textContent = currentTime;
+    timer = setTimeout(timing, 1000);
+}
+
+function pause() {
+
 }
 
 /**Find the tiles can be moved and define the way of swapping between numbered tile and empty tile */
@@ -212,13 +219,8 @@ function checkMoveTile() {
 }
 
 
-function pause() {
 
-}
 
-function stop() {
-    
-}
 // To check if the puzzle is sorted in the ascending order by matching their tile value to their id(index)+1
 /**Check if user solves puzzle and reset game */
 function checkWin() {
@@ -232,13 +234,13 @@ function checkWin() {
             win = false;
         }       
     }
+    
     if(win){
-        alert("Congratulations, You spend" + timer.value + "s solve the puzzle!")
+        alert("Congratulations, You spend" + clock.innerHTML + "s solve the puzzle!")
         location.reload();
-        // startButton.textContent = "Start";
-        // startButton.style.backgroundColor = "green";
-        // let timer = setTimeout(timing, 1000);
-        // clearTimeout(timer);
+        startButton.textContent = "Start";
+        startButton.style.backgroundColor = "green";
+        clearTimeout(timer);
     }
 }
 function incrementalScore() {
