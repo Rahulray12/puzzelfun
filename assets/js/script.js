@@ -195,21 +195,25 @@ function pause() {
 function stop() {
     
 }
+// To check if the puzzle is sorted in the ascending order by matching their tile value to their id(index)+1
+/**Check if user solves puzzle and reset game */
 function checkWin() {
     win = true;
     let tiles=document.getElementsByTagName("td");
     for(let i=0; i<tiles.length-1; i++){
-        var cell = document.getElementById(i);
-        if(cell.textContent==i+1){
+        var tile = document.getElementById(i);
+        if(tile.textContent==i+1){
             continue;
         }else {
             win = false;
-        }
-        
+        }       
     }
     if(win){
-        alert("Congratulations, You solve the puzzle!!")
-        location.reload()
+        alert("Congratulations, You spend" + timer.value + "s solve the puzzle!")
+        location.reload();
+        // startButton.textContent = "Start";
+        // startButton.style.backgroundColor = "green";
+        // clearTimeout(timer);
     }
 }
 function incrementalScore() {
