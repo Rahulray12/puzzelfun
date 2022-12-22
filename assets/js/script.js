@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			if (this.getAttribute("data-type") === "guide") {
 				openGuide();
 			} else if (this.getAttribute("data-type") === "start") {
-                shuffle(); 
+                start(); 
             } else if (this.getAttribute("data-type") === "pause") {
                 pause(); 
             } else {let gameType = this.getAttribute("data-type");
@@ -20,14 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
     //activate close game guide function when click on 'x'
     document.getElementsByClassName("close")[0].addEventListener("click", closeGuide);
 
-     
-
-    // need to think how to trigger checkwin
-
+         
     // Default game is 3X3 puzzle when DOM is loaded
     runGame("3");
     
 });
+
+
+
+
 
 /**Display game guide when user clicking on 'Game Guide' button*/
 function openGuide() {
@@ -88,7 +89,9 @@ function createTable(type) {
             tile.innerHTML = numArray[i];
             tile.className = "tile";
     }
-}      
+}
+
+
 // shuffle the numbers randomly to start the game
 /**Randomly pick the numbers from array and asign them to puzzel tiles*/
 function shuffle() {
@@ -138,21 +141,29 @@ function display5puzzle() {
     createTable(type);
 }
 
+/**Satrt a new game and begin to time. Allow user to restart another game if they want to exit the current game*/
 function start() {
     shuffle();
     let startButton = document.getElementById("start");
-    let clock = document.getElementById("timer")
+    let clock = document.getElementById("timer");
     let currentTime;
+    let timer;
     startButton.innerHTML = "Restart";
-    startButton.style.backgroundColor = "yellow";
+    startButton.style.backgroundColor = "orange";
+    startButton.style.color = "black";
     setTimeout(timing, 1000);
     currentTime = 0;
     clock.textContent = currentTime;
 
-
-
-
-
+    /**Start timing in seconds  */
+    function timing() {
+    currentTime++;
+    clock.textContent = currentTime;
+    timer = setTimeout(timing, 1000);
+    }
+    if(startButton.innerHTML = "Restart") {
+        clearTimeout(timer);
+    }
 }
 
 /**Find the tiles can be moved and define the way of swapping between numbered tile and empty tile */
@@ -199,12 +210,7 @@ function checkMoveTile() {
       };  
 
 }
-/**Start timing in seconds  */
-function timing() {
-    currentTime++;
-    clock.textContent = currentTime;
-    let timer = setTimeout(timing, 1000);
-}
+
 
 function pause() {
 
