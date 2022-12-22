@@ -122,7 +122,7 @@ function shuffle() {
     
 /**Display 3x3puzzle*/
 function display3puzzle() {
-    let type=3;
+    let type=2;
     createTable(type);
 }
 
@@ -178,6 +178,7 @@ function checkMoveTile() {
         tile.addEventListener('click', function() {
           if (canMove(tile)) {
             moveTile(tile);
+            checkWin(tile);
            }
           });
       };  
@@ -194,10 +195,20 @@ function pause() {
 function stop() {
     
 }
-function Checkwin() {
+function checkWin() {
+    // win=true;
+    let tiles=document.getElementsByClassName("tile");   
+    for(let i=0; i<tiles.length -1; i++){
+        var cell = document.getElementById(i);
+        if(cell.innerHTML==i+1){
+            continue;
+        }else{
+            alert("Congratulations！You solve the puzzle!!")
+        }
+    }
 
-}
-function ncrementalScore() {
+
+function incrementalScore() {
 
 }
 
