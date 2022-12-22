@@ -93,6 +93,7 @@ function createTable(type) {
         for (j = 0; j < type; j++) {
             const tile = document.createElement("td");
             tile.id = Count;
+            checkMoveTile();
             tile.addEventListener("click", checkMoveTile);
             row.appendChild(tile);
             Count++;          
