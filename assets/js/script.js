@@ -87,6 +87,7 @@ function createTable(type) {
     document.getElementById("puzzle").appendChild(myTable);
     
     // create table tr and tb content and add id to each tile
+    // Add eventlistener to wait the clicking on tiles to move them
     let Count = 0; 
     for (let i = 0; i < type; i++) {
         const row = document.createElement("tr");
@@ -165,7 +166,7 @@ function display5puzzle() {
 }
 
 
-/**Satrt a new game and begin to time. Allow user to restart another game if they want to exit the current game*/
+/**Satrt a new game and begin to timing. Allow user to restart another game if they want to exit the current game*/
 function start() {
     shuffle();
     startButton.innerHTML = "Restart";
@@ -192,7 +193,7 @@ function timing() {
     clock.textContent = currentTime;
     timer = setTimeout(timing, 1000);
 }
-
+/**restart timer */
 function resume () {
     if(!active) {
         active = 1;
@@ -206,7 +207,7 @@ function pause() {
     active=0;       
 }
 
-/**Find the tiles can be moved and define the way of swapping between numbered tile and empty tile */
+/**Find the tiles can be moved and define the way of moving them between numbered tile and empty tile */
 function checkMoveTile() {
     let tiles = document.getElementsByTagName('td')
     /**Check if a tiles is adjascent to the empty tile*/
@@ -238,15 +239,15 @@ function checkMoveTile() {
         element.style.backgroundColor = "#0f0f0f";
       };
 
-      for (let tile of tiles) {
+    for (let tile of tiles) {
         tile.addEventListener('click', function() {
-          if (canMove(tile)) {
+            if (canMove(tile)) {
             moveTile(tile);
             setTimeout(checkWin, 500); //checkWin runs faster than moveTile and the winning message appears
             //right after the final click but before the tile moves to the right spot. So checkWin is set half second 
             //delayed after moveTile.
            }
-          });
+        });
       };  
 
 }
@@ -278,7 +279,7 @@ function checkWin() {
     }
 }
 
-/**Count the times of solving the puzzle at each puzzle type*/
+/**Count the times of winning at each puzzle type*/
 function sumScore() {
     
     let currentScore = parseInt(document.getElementById("score").innerText);
