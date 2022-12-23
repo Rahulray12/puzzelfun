@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 resume(); 
             }else {let gameType = this.getAttribute("data-type");
 				runGame(gameType);
+                checkMoveTile.disabled = true;
 			}
 		});
 	}
@@ -57,7 +58,7 @@ function runGame(gameType) {
         
     } else if (gameType === "4") {
         display4puzzle();
-        clearTimeout(timer);
+        clearTimeout(timer);        
         startButton.textContent = "Start";
         startButton.style.backgroundColor = "green";
         clock.innerText = "0";
@@ -66,7 +67,7 @@ function runGame(gameType) {
 
     } else if (gameType === "5") {
         display5puzzle();
-        clearTimeout(timer);
+        clearTimeout(timer);        
         startButton.textContent = "Start";
         startButton.style.backgroundColor = "green";
         clock.innerText = "0";
@@ -169,6 +170,9 @@ function display5puzzle() {
 
 /**Satrt a new game and begin to timing. Allow user to restart another game if they want to exit the current game*/
 function start() {
+    if(startButton.innerHTML = "Restart") {
+        clearTimeout(timer);
+    }
     shuffle();
     startButton.innerHTML = "Restart";
     startButton.style.backgroundColor = "orange";
@@ -178,9 +182,6 @@ function start() {
     
     clock.textContent = currentTime;
       
-    if(startButton.innerHTML = "Restart") {
-        clearTimeout(timer);
-    }
 }
 
 let startButton = document.getElementById("start");
