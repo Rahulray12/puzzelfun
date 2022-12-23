@@ -49,22 +49,24 @@ function runGame(gameType) {
     document.getElementById("puzzle").innerHTML = '';
     if (gameType === "3") {
         display3puzzle();
-        startButton.textContent = "Start";
-        startButton.style.backgroundColor = "green";
         clearTimeout(timer);
+        startButton.textContent = "Start";
+        startButton.style.backgroundColor = "green";        
         clock.innerText = "0";
         document.getElementById("score").innerText = "0";
         
     } else if (gameType === "4") {
         display4puzzle();
+        clearTimeout(timer);
         startButton.textContent = "Start";
         startButton.style.backgroundColor = "green";
         clock.innerText = "0";
         document.getElementById("score").innerText = "0";
-        clearTimeout(timer);
+        
 
     } else if (gameType === "5") {
         display5puzzle();
+        clearTimeout(timer);
         startButton.textContent = "Start";
         startButton.style.backgroundColor = "green";
         clock.innerText = "0";
