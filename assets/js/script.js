@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 resume(); 
             }else {let gameType = this.getAttribute("data-type");
 				runGame(gameType);
-                checkMoveTile.disabled = true;
+                
 			}
 		});
 	}
@@ -95,9 +95,7 @@ function createTable(type) {
         const row = document.createElement("tr");
         for (j = 0; j < type; j++) {
             const tile = document.createElement("td");
-            tile.id = Count;
-            checkMoveTile();
-            tile.addEventListener("click", checkMoveTile);
+            tile.id = Count;            
             row.appendChild(tile);
             Count++;          
         }
@@ -146,6 +144,8 @@ function shuffle() {
             tile.className = "empty"
             tile.style.backgroundColor = "#0f0f0f";
         }
+        checkMoveTile();
+        tile.addEventListener("click", checkMoveTile);
     }
 }
     
