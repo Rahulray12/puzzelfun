@@ -88,8 +88,7 @@ function createTable(type) {
     myTable.id = "myTable";
     document.getElementById("puzzle").appendChild(myTable);
     
-    // create table tr and tb content and add id to each tile
-    // Add eventlistener to wait the clicking on tiles to move them
+    // create table tr and tb contents and add id to each tile
     let Count = 0; 
     for (let i = 0; i < type; i++) {
         const row = document.createElement("tr");
@@ -132,7 +131,8 @@ function shuffle() {
         [numArray[i], numArray[j]] = [numArray[j], numArray[i]];
     }
     
-    
+    // asign randomised numbers to each tile and add event listener to 
+    // call the check and move tiles function
     for (let i = 0; i < cell.length; i++) {
         let tile = document.getElementById(i);
         if (numArray[i] !== numArray.length) {
