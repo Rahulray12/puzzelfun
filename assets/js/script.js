@@ -172,6 +172,11 @@ function display5puzzle() {
 function start() {
     if(startButton.innerHTML = "Restart") {
         clearTimeout(timer);
+        startButton.disabled = true;
+        setTimeout(restartBtn,2000);
+        function restartBtn() {
+            startButton.disabled = false
+        }
     }
     shuffle();
     startButton.innerHTML = "Restart";
