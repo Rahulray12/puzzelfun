@@ -71,8 +71,7 @@ function runGame(gameType) {
         startButton.style.backgroundColor = "green";
         clock.innerText = "0";
         document.getElementById("score").innerText = "0";
-        clearTimeout(timer);
-
+        
     } else {
         alert(`Game type ${gameType} not found`);
         throw `Erro game type ${gameType}, aborting!`;
@@ -275,9 +274,10 @@ function checkWin() {
         alert("Congratulations, You spend" + clock.innerHTML + "s solve the puzzle!")
         sumScore();
         // location.reload();
+        clearTimeout(timer);
         startButton.textContent = "Start";
         startButton.style.backgroundColor = "green";
-        clearTimeout(timer);
+        
     }
 }
 
