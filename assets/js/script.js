@@ -52,7 +52,7 @@ function runGame(gameType) {
         display3puzzle();
         clearTimeout(timer);
         startButton.textContent = "Start";
-        startButton.style.backgroundColor = "green";        
+        startButton.style.backgroundColor = "#a6f5a6";        
         clock.innerText = "0";
         document.getElementById("score").innerText = "0";
         
@@ -60,7 +60,7 @@ function runGame(gameType) {
         display4puzzle();
         clearTimeout(timer);        
         startButton.textContent = "Start";
-        startButton.style.backgroundColor = "green";
+        startButton.style.backgroundColor = "#a6f5a6";
         clock.innerText = "0";
         document.getElementById("score").innerText = "0";
         
@@ -69,7 +69,7 @@ function runGame(gameType) {
         display5puzzle();
         clearTimeout(timer);        
         startButton.textContent = "Start";
-        startButton.style.backgroundColor = "green";
+        startButton.style.backgroundColor = "#a6f5a6";
         clock.innerText = "0";
         document.getElementById("score").innerText = "0";
         
@@ -172,19 +172,17 @@ function display5puzzle() {
 function start() {
     if(startButton.innerHTML = "Restart") {
         clearTimeout(timer);
-        startButton.disabled = true;
-        setTimeout(restartBtn,2000);
-        function restartBtn() {
+        startButton.disabled = true;  
+        setTimeout(restartBtn,2000);//Disable the restart button for 2 seconds before next click
+        function restartBtn() {     //To prevent users keeping on press it and mess up the timers running
             startButton.disabled = false
         }
     }
     shuffle();
     startButton.innerHTML = "Restart";
     startButton.style.backgroundColor = "orange";
-    startButton.style.color = "black";
     currentTime = 0;
-    setTimeout(timing, 1000);
-    
+    setTimeout(timing, 1000);    
     clock.textContent = currentTime;
       
 }
@@ -282,7 +280,7 @@ function checkWin() {
         // location.reload();
         clearTimeout(timer);
         startButton.textContent = "Start";
-        startButton.style.backgroundColor = "green";
+        startButton.style.backgroundColor = "#a6f5a6";
         
     }
 }

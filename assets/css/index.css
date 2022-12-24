@@ -70,7 +70,7 @@ button:active{
     padding:2px 0px 3px 2px;
 }
 
-#start {
+/* #start {
     background-color: green;
 }
 
@@ -80,7 +80,7 @@ button:active{
 
 #resume {
     background-color: rgb(84, 84, 179);
-}
+} */
 
 .game-func i {
     color: gold;
