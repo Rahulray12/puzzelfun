@@ -106,7 +106,7 @@ button:active{
     display: none;
     position: fixed;
     z-index: 1;
-    margin-top: 160px;
+    margin-top: 40px;
     left:0;
     top:0;
     width:100%;
@@ -135,7 +135,7 @@ button:active{
     /* Animates zoom effect on loading the page */
  
     animation-name: game-guide-zoom;
-    animation-duration: 3s;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
 }
 /* Zooming effect for game guide page */
@@ -179,7 +179,7 @@ li {
 /* Footer */
 footer {
     width: 100%;
-    margin-top: 30px;    
+    margin-top: 20px;    
     align-items: center;
     border: 5px groove #e5eaf9;
     /* position: fixed;
