@@ -99,7 +99,7 @@ button:active{
 /* Game Guide background */
 .guide-container {
     font-family:Lato, sans-serif;
-    font-size:small;
+    font-size:15px;
     text-align: center;
     letter-spacing: 0.1px;
     background-color: rgba(226, 222, 166, 0.6);
@@ -122,7 +122,9 @@ button:active{
 }
 .guide-desc {
     margin:5px;
+    height:280px;
     text-align: justify;
+    overflow: auto;
 } 
 .game-guide {
     background-color: rgb(250, 238, 238);
@@ -132,10 +134,12 @@ button:active{
     position: relative;
     margin-top: 20px;
     border:4px ridge rgb(177, 178, 231);
+    
+
     /* Animates zoom effect on loading the page */
  
     animation-name: game-guide-zoom;
-    animation-duration: 0.3s;
+    animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
 /* Zooming effect for game guide page */
