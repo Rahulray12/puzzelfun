@@ -51,16 +51,14 @@ function runGame(gameType) {
     if (gameType === "3") {
         display3puzzle();
         clearTimeout(timer);
-        startButton.textContent = "Start";
-        startButton.style.backgroundColor = "#a6f5a6";        
+        startButton.textContent = "Start";          
         clock.innerText = "0";
         document.getElementById("score").innerText = "0";
         
     } else if (gameType === "4") {
         display4puzzle();
         clearTimeout(timer);        
-        startButton.textContent = "Start";
-        startButton.style.backgroundColor = "#a6f5a6";
+        startButton.textContent = "Start";        
         clock.innerText = "0";
         document.getElementById("score").innerText = "0";
         
@@ -68,8 +66,7 @@ function runGame(gameType) {
     } else if (gameType === "5") {
         display5puzzle();
         clearTimeout(timer);        
-        startButton.textContent = "Start";
-        startButton.style.backgroundColor = "#a6f5a6";
+        startButton.textContent = "Start";        
         clock.innerText = "0";
         document.getElementById("score").innerText = "0";
         
@@ -151,7 +148,7 @@ function shuffle() {
     
 /**Display 3x3puzzle*/
 function display3puzzle() {
-    let type=2;
+    let type=3;
     createTable(type);
 }
 
@@ -180,7 +177,6 @@ function start() {
     }
     shuffle();
     startButton.innerHTML = "Restart";
-    startButton.style.backgroundColor = "orange";
     currentTime = 0;
     setTimeout(timing, 1000);    
     clock.textContent = currentTime;
@@ -279,8 +275,7 @@ function checkWin() {
         sumScore();
         // location.reload();
         clearTimeout(timer);
-        startButton.textContent = "Start";
-        startButton.style.backgroundColor = "#a6f5a6";
+        startButton.textContent = "Start";      
         
     }
 }
