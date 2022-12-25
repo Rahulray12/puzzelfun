@@ -293,49 +293,21 @@ td:hover {
     }
     
     .guide-desc {
-        margin:5px;
-        text-align: justify;
-        overflow: auto;
+        height: auto;
     } 
     
 }
 
-/* For screen sizes from 760px wide up */
+/* For screen sizes from 1280px wide up (1280X802) */
 
-@media screen and (min-width: 760px) {
-    .logo {
-        height: 38px;
-        width: 38px;
-    }
-    h1 {
-        font-size: 280%;
-    }
-    button {
-        font-size: 25px;
-    }
+@media screen and (min-width: 1280px) {
     td {
-        width: 90px;
-        height: 90px;
+        width: 55px;
+        height: 55px;
     }
     .game-area {
-        height: 600px;
-    }
-    .game-menu {
-        margin-top: 40px;
-    }
-    .guide-container {
-        font-size: 20px;
-    }
-    .guide-desc {
-        margin:5px;
-        text-align: justify;
-        overflow: auto;
-    } 
-    footer h2 {
-        font-size: 150%;
-    }
-    .game-func i {
-        font-size: 40px;
-        margin-top: 20px;
+        height: 400px;
     }
 }
+
+
