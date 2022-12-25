@@ -274,7 +274,7 @@ td:hover {
 
 /* For screen sizes from 760px wide up */
 
-@media screen and (min-width:760) {
+@media screen and (min-width: 760px) {
     .logo {
         height: 38px;
         width: 38px;
