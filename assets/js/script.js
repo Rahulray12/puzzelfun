@@ -25,9 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
          
     // Default game is 3X3 puzzle when DOM is loaded
-    runGame("3");
-
-    
+    runGame("3");   
 });
 
 
@@ -43,9 +41,10 @@ function closeGuide() {
     document.getElementById("guide-modal").style.display = "none";
 }
 
-// After user choose the puzzle to play, the default puzzle will be 
-// cleared and repaced with the selected one
-/** To display the puzzle game chosen by user */
+// After user click one of the puzzle type (3x3, 4x4 or 5x5) buttons, the default puzzle or current puzzel type will be 
+// cleared, and repaced with the selected one. Start button's text content shows "Start", and score and time are all reset to “0”
+
+/** To display the puzzle game chosen by user and game functions reset to initial setting */
 function runGame(gameType) {
     document.getElementById("puzzle").innerHTML = '';
     if (gameType === "3") {
@@ -77,7 +76,7 @@ function runGame(gameType) {
 
 }
 
-// Create table and fill in the tiles with numbers from 1 to their Type X Type (eg:3x3)
+// Create table and fill in the tiles with numbers from 1 to the number =their Type X Type (eg:3x3)
 /**Create puzzel tables by type */
 function createTable(type) {
     let numArray= [];
@@ -104,10 +103,6 @@ function createTable(type) {
         let tile = document.getElementById(i);
             tile.innerHTML = numArray[i];
             tile.className = "tile";
-        }else {
-        tile.innerHTML = "";
-        tile.className = "empty"
-        tile.style.backgroundColor = "#0f0f0f";
         }
     }
 }
@@ -141,7 +136,8 @@ function shuffle() {
             tile.className = "empty"
             tile.style.backgroundColor = "#0f0f0f";
         }
-        checkMoveTile();
+        checkMoveTile();//checkMoveTile function not respond to the first click by calling only eventlistener
+                        //therefore it is called one more time before the add eventlistner to solve the problem
         tile.addEventListener("click", checkMoveTile);
     }
 }
@@ -164,6 +160,10 @@ function display5puzzle() {
     createTable(type);
 }
 
+//After clicking on 'Start' button, its text content changes to "Restart"and start timer. By clicking on "Restart",
+//it allows users to shuffle the numbers of the tiles before finishing cuurent game, 
+//and start a new game in the same puzzle type. After clicking on "Restart", score will 
+//continue incrementing for solving the same game type puzzles but time will be reset to 0 and a new timer starts for each play
 
 /**Satrt a new game and begin to timing. Allow user to restart another game if they want to exit the current game*/
 function start() {
@@ -201,14 +201,13 @@ function resume () {
         timing();
     }
 }
-
 /**Pause timer */
 function pause() {
     clearTimeout(timer);
     active=0;       
 }
 
-/**Find the tiles can be moved and define the way of moving them between numbered tile and empty tile */
+/**Find the tiles which can be moved and define the way of moving them between numbered tile and empty tile */
 function checkMoveTile() {
     let tiles = document.getElementsByTagName('td')
     /**Check if a tiles is adjascent to the empty tile*/
@@ -218,9 +217,9 @@ function checkMoveTile() {
         const emptyTile = document.getElementsByClassName('empty')[0];
         const emptyTileColumn = emptyTile.cellIndex;
         const emptyTileRow = emptyTile.parentElement.rowIndex;
-        //list all 4 possible positions can be adjascent to empty tile (defined by column and row), 
-        // only the tiles sitting on one or more of the below positions will return true, which means 'can be moved'.
 
+        //list all 4 possible positions where could be adjascent to the empty tile (defined by column and row), 
+        // only the tiles sitting on one or more of the below positions will return true, which means 'can be moved'.
         return (tileColumn === emptyTileColumn && tileRow === emptyTileRow + 1) ||
                (tileColumn === emptyTileColumn && tileRow === emptyTileRow - 1) ||
                (tileRow === emptyTileRow && tileColumn === emptyTileColumn + 1) ||
@@ -244,20 +243,16 @@ function checkMoveTile() {
         tile.addEventListener('click', function() {
             if (canMove(tile)) {
             moveTile(tile);
-            setTimeout(checkWin, 500); //checkWin runs faster than moveTile and the winning message appears
-            //right after the final click but before the tile moves to the right spot. So checkWin is set half second 
-            //delayed after moveTile.
-           }
-        });
-      };  
+            setTimeout(checkWin, 500); //checkWin runs faster than moveTile and therefor the winning message appears
+            }                          //right after the final click but before the tile moves to the right spot. So checkWin is set half second 
+        });                            //delayed after moveTile.
+    };    
+}      
+        
 
-}
-
-
-
-
-// To check if the puzzle is sorted in the ascending order by matching their tile value to their id(index)+1
-/**Check if user solves puzzle and reset game */
+// To check if the puzzle is sorted in the ascending order by matching their tile's innerhtml to their id(index)+1
+//If wining the game, an alert shows, score increse by one, timer is stopped and restart button change to "Start"
+/**Check if user solves puzzle. If win, confirm winning and reset game */
 function checkWin() {
     win = true;
     let tiles=document.getElementsByTagName("td");
@@ -274,10 +269,9 @@ function checkWin() {
         let clock = document.getElementById("timer");
         alert("Congratulations, You spend" + clock.innerHTML + "s solve the puzzle!")
         sumScore();
-        // location.reload();
         clearTimeout(timer);
-        document.getElementById("start").textContent = "Start";      
-        
+        document.getElementById("start").textContent = "Start";    
+       
     }
 }
 
