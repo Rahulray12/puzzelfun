@@ -315,14 +315,16 @@ td:hover {
     }
 }
 
-/* For screen sizes from 1280px wide up (1280X802) */
+/* For screen sizes from 1600px wide up (1600X992) */
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1600px) {
     td {
-        width: 55px;
-        height: 55px;
+        width: 75px;
+        height: 75px;
     }
     .game-area {
-        height: 400px;
+        height: 500px;
     }
 }
+
+
