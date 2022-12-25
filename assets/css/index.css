@@ -22,7 +22,7 @@ h1 {
     font-family: 'Rubik Gemstones', cuesive;
     color: #5a093f;
     font-size: 170%;
-    padding: 5px;
+    margin: 5px;
     text-transform: uppercase;
 }
 .logo {
@@ -80,7 +80,7 @@ button:active{
 .game-func i {
     color: gold;
     text-shadow: 1px 1px 1px rgb(65, 190, 16);
-    padding:5px auto;      
+    padding:5px;      
     
 }
 
@@ -135,7 +135,6 @@ button:active{
     margin-top: 20px;
     border:4px ridge rgb(177, 178, 231);
     
-
     /* Animates zoom effect on loading the page */
  
     animation-name: game-guide-zoom;
@@ -186,8 +185,8 @@ footer {
     margin-top: 20px;    
     align-items: center;
     border: 5px groove #e5eaf9;
-    /* position: fixed;
-    bottom: 0; */
+    position: fixed;
+    bottom: 0;
 }
 
 footer h2 {
@@ -240,4 +239,59 @@ td:hover {
 .empty:hover {
     background-color: #0f0f0f;
     cursor: pointer;
+}
+
+/*Media queries*/
+
+
+/* For screen sizes from 390px wide up */
+
+@media screen and (min-width: 390px) {
+    logo {
+        height: 30px;
+        width: 30px;
+    }
+    h1 {
+        font-size: 200px;
+    }
+    button {
+        font-size: 20px;
+    }
+    td {
+        width: 55px;
+        height: 55px;
+    }
+    .game-area {
+        height: 400px;
+    }
+    .game-menu {
+        margin-top: 40px;
+    }
+}
+/*Media queries*/
+
+
+/* For screen sizes from 390px wide up */
+
+@media screen and (min-width: 390px) {
+    logo {
+        height: 30px;
+        width: 30px;
+    }
+    h1 {
+        font-size: 200px;
+    }
+    button {
+        font-size: 20px;
+    }
+    td {
+        width: 55px;
+        height: 55px;
+    }
+    .game-area {
+        height: 400px;
+    }
+    .game-menu {
+        margin-top: 40px;
+    }
 }
