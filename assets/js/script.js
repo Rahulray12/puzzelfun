@@ -51,23 +51,23 @@ function runGame(gameType) {
     if (gameType === "3") {
         display3puzzle();
         clearTimeout(timer);
-        startButton.textContent = "Start";          
-        clock.innerText = "0";
+        document.getElementById("start").textContent = "Start";          
+        document.getElementById("timer").innerText = "0";
         document.getElementById("score").innerText = "0";
         
     } else if (gameType === "4") {
         display4puzzle();
         clearTimeout(timer);        
-        startButton.textContent = "Start";        
-        clock.innerText = "0";
+        document.getElementById("start").textContent = "Start";        
+        document.getElementById("timer").innerText = "0";
         document.getElementById("score").innerText = "0";
         
 
     } else if (gameType === "5") {
         display5puzzle();
         clearTimeout(timer);        
-        startButton.textContent = "Start";        
-        clock.innerText = "0";
+        document.getElementById("start").textContent = "Start";        
+        document.getElementById("timer").innerText = "0";
         document.getElementById("score").innerText = "0";
         
     } else {
@@ -167,6 +167,7 @@ function display5puzzle() {
 
 /**Satrt a new game and begin to timing. Allow user to restart another game if they want to exit the current game*/
 function start() {
+    let startButton =document.getElementById("start")
     if(startButton.innerHTML = "Restart") {
         clearTimeout(timer);
         startButton.disabled = true;  
@@ -179,19 +180,18 @@ function start() {
     startButton.innerHTML = "Restart";
     currentTime = 0;
     setTimeout(timing, 1000);    
-    clock.textContent = currentTime;
+    document.getElementById("timer").textContent = currentTime;
       
 }
 
-let startButton = document.getElementById("start");
-let clock = document.getElementById("timer");
+//set start, pause and resume functions to control the timer
 let currentTime;
 let timer;
-let active = 0
+let active = 0;
 /**Start timing in seconds  */
-function timing() {
+function timing() {    
     currentTime++;
-    clock.textContent = currentTime;
+    document.getElementById("timer").textContent = currentTime;
     timer = setTimeout(timing, 1000);
 }
 /**restart timer */
@@ -271,11 +271,12 @@ function checkWin() {
     }
     
     if(win){
+        let clock = document.getElementById("timer");
         alert("Congratulations, You spend" + clock.innerHTML + "s solve the puzzle!")
         sumScore();
         // location.reload();
         clearTimeout(timer);
-        startButton.textContent = "Start";      
+        document.getElementById("start").textContent = "Start";      
         
     }
 }
