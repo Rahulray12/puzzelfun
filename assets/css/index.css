@@ -28,9 +28,8 @@ h1 {
 .logo {
     height:25px;
     width:25px;
-    /* margin-right:5px; */
-
 }
+
 /* game menu and function buttons style and display */
 button {
     border: 1px solid #0f0f0f;
@@ -43,7 +42,6 @@ button {
     color: #202020;
     padding: 2px;
     cursor: pointer;
-
 }
 
 button:focus,
@@ -53,6 +51,7 @@ button:active{
     color: #e5eaf9;;
 }
 
+/* game menu icons */
 #green {
     color: rgb(15, 167, 60);
     text-shadow: 1px 1px 1px rgb(65, 190, 16);
@@ -70,12 +69,6 @@ button:active{
     text-shadow: 1px 1px 1px rgb(65, 190, 16);
     padding:2px 0px 3px 2px;
 }
-
-/* #start,
-#pause,
-#resume {
-    font-size: 15px;
-} */
 
 .game-func i {
     color: gold;
@@ -150,6 +143,7 @@ button:active{
         transform: scale(1.05);
     }
 }
+
 /* Close button on the game instruction */
 .close {
     color: rgb(250, 238, 238);
@@ -179,6 +173,7 @@ ul {
 li {
     list-style: circle inside;
 }
+
 /* Footer */
 footer {
     width: 100%;
