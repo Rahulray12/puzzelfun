@@ -102,7 +102,7 @@ button:active{
     font-size:15px;
     text-align: center;
     letter-spacing: 0.1px;
-    background-color: rgba(226, 222, 166, 0.6);
+    background-color: rgb(6 85 106 / 60%);
     display: none;
     position: fixed;
     z-index: 1;
@@ -274,7 +274,7 @@ td:hover {
 /* For screen sizes from 390px wide up */
 
 @media screen and (min-width: 390px) {
-    logo {
+    .logo {
         height: 30px;
         width: 30px;
     }
@@ -291,7 +291,51 @@ td:hover {
     .game-area {
         height: 400px;
     }
+    
+    .guide-desc {
+        margin:5px;
+        text-align: justify;
+        overflow: auto;
+    } 
+    
+}
+
+/* For screen sizes from 760px wide up */
+
+@media screen and (min-width: 760px) {
+    .logo {
+        height: 38px;
+        width: 38px;
+    }
+    h1 {
+        font-size: 280%;
+    }
+    button {
+        font-size: 25px;
+    }
+    td {
+        width: 90px;
+        height: 90px;
+    }
+    .game-area {
+        height: 600px;
+    }
     .game-menu {
         margin-top: 40px;
+    }
+    .guide-container {
+        font-size: 20px;
+    }
+    .guide-desc {
+        margin:5px;
+        text-align: justify;
+        overflow: auto;
+    } 
+    footer h2 {
+        font-size: 150%;
+    }
+    .game-func i {
+        font-size: 40px;
+        margin-top: 20px;
     }
 }
