@@ -252,7 +252,7 @@ td:hover {
         width: 30px;
     }
     h1 {
-        font-size: 200px;
+        font-size: 210px;
     }
     button {
         font-size: 20px;
@@ -267,35 +267,40 @@ td:hover {
     .game-menu {
         margin-top: 40px;
     }
-}
-/*Media queries*/
-
-
-/* For screen sizes from 390px wide up */
-
-@media screen and (min-width: 390px) {
-    .logo {
-        height: 30px;
-        width: 30px;
-    }
-    h1 {
-        font-size: 210%;
-    }
-    button {
-        font-size: 20px;
-    }
-    td {
-        width: 55px;
-        height: 55px;
-    }
-    .game-area {
-        height: 400px;
-    }
-    
     .guide-desc {
         height: auto;
     } 
+}
+
+/* For screen sizes from 760px wide up */
+
+@media screen and (min-width:760) {
+    .logo {
+        height: 38px;
+        width: 38px;
+    }
+    h1 {
+        font-size: 280%;
+    }
+    button {
+        font-size: 25px;
+    }
+    td {
+        width: 90px;
+        height: 90px;
+    }
+    .game-area {
+        height: 600px;
+    }
     
+    .game-func i {
+        font-size: 40px;
+        margin-top: 20px;
+    } 
+    
+    footer h2 {
+        font-size: 150%;
+    }
 }
 
 /* For screen sizes from 1280px wide up (1280X802) */
@@ -310,4 +315,14 @@ td:hover {
     }
 }
 
+/* For screen sizes from 1280px wide up (1280X802) */
 
+@media screen and (min-width: 1280px) {
+    td {
+        width: 55px;
+        height: 55px;
+    }
+    .game-area {
+        height: 400px;
+    }
+}
