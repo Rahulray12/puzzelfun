@@ -286,14 +286,14 @@ td:hover {
         font-size: 25px;
     }
     td {
-        width: 90px;
-        height: 90px;
+        width: 75px;
+        height: 75px;
     }
     .guide-container {
         font-size: 20px;
     }
     .game-area {
-        height: 600px;
+        height: 500px;
     }
     
     .game-func i {
