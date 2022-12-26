@@ -239,7 +239,7 @@ td:hover {
 /*Media queries*/
 
 
-For screen sizes from 390px wide up
+/* For screen sizes from 390px wide up */
 
 @media screen and (min-width: 390px) {
     logo {
@@ -268,7 +268,7 @@ For screen sizes from 390px wide up
 }
 
 /* For screen sizes from 760px wide up */
-/* 
+
 @media screen and (min-width: 760px) {
     .logo {
         height: 38px;
@@ -311,7 +311,7 @@ For screen sizes from 390px wide up
     .game-area {
         height: 400px;
     }
-} 
+}
 
 /* For screen sizes from 1600px wide up (1600X992) */
 
