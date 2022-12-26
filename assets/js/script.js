@@ -143,7 +143,7 @@ function shuffle() {
     
 /**Display 3x3puzzle*/
 function display3puzzle() {
-    let type=2;
+    let type=3;
     createTable(type);
 }
 
