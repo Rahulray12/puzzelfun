@@ -87,7 +87,7 @@ function createTable(type) {
     let Count = 0; 
     for (let i = 0; i < type; i++) {
         const row = document.createElement("tr");
-        for (j = 0; j < type; j++) {
+        for (let j = 0; j < type; j++) {
             const tile = document.createElement("td");
             tile.id = Count;            
             row.appendChild(tile);
@@ -143,7 +143,7 @@ function shuffle() {
     
 /**Display 3x3puzzle*/
 function display3puzzle() {
-    let type=3;
+    let type=2;
     createTable(type);
 }
 
@@ -253,7 +253,7 @@ function checkMoveTile() {
 //If wining the game, an alert shows, score increse by one, timer is stopped and restart button change to "Start"
 /**Check if user solves puzzle. If win, confirm winning and reset game */
 function checkWin() {
-    win = true;
+    let win = true;
     let tiles=document.getElementsByTagName("td");
     for(let i=0; i<tiles.length-1; i++){
         var tile = document.getElementById(i);
