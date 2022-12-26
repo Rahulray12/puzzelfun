@@ -132,7 +132,7 @@ function shuffle() {
             tile.style.backgroundColor = "whitesmoke";            
         } else {
             tile.innerHTML = "";
-            tile.className = "empty"
+            tile.className = "empty";
             tile.style.backgroundColor = "#0f0f0f";
         }
         checkMoveTile();//checkMoveTile function not respond to the first click by calling only eventlistener
@@ -166,21 +166,20 @@ function display5puzzle() {
 
 /**Satrt a new game and begin to timing. Allow user to restart another game if they want to exit the current game*/
 function start() {
-    let startButton =document.getElementById("start")
+    let startButton =document.getElementById("start");
+    function restartBtn() {     
+        startButton.disabled = false;
+    }
     if(startButton.innerHTML = "Restart") {
         clearTimeout(timer);
         startButton.disabled = true;  
         setTimeout(restartBtn,2000);//Disable the restart button for 2 seconds before next click
-        function restartBtn() {     //To prevent users keeping on press it and mess up the timers running
-            startButton.disabled = false
-        }
-    }
+    }                               //To prevent users keeping on press it and mess up the timers running
     shuffle();
     startButton.innerHTML = "Restart";
     currentTime = 0;
     setTimeout(timing, 1000);    
-    document.getElementById("timer").textContent = currentTime;
-      
+    document.getElementById("timer").textContent = currentTime;      
 }
 
 //set start, pause and resume functions to control the timer
@@ -208,7 +207,7 @@ function pause() {
 
 /**Find the tiles which can be moved and define the way of moving them between numbered tile and empty tile */
 function checkMoveTile() {
-    let tiles = document.getElementsByTagName('td')
+    let tiles = document.getElementsByTagName('td');
     /**Check if a tiles is adjascent to the empty tile*/
     function canMove(tile){
         const tileColumn = tile.cellIndex;
@@ -223,7 +222,7 @@ function checkMoveTile() {
                (tileColumn === emptyTileColumn && tileRow === emptyTileRow - 1) ||
                (tileRow === emptyTileRow && tileColumn === emptyTileColumn + 1) ||
                (tileRow === emptyTileRow && tileColumn === emptyTileColumn - 1);
-      };
+      }
       
     /**Move one of the tiles returned true from canMove function and swap it with empty cell when user clcking on it */
     function moveTile(element){
@@ -236,7 +235,7 @@ function checkMoveTile() {
         element.classList.remove('tile');
         element.classList.add('empty');
         element.style.backgroundColor = "#0f0f0f";
-      };
+      }
 
     for (let tile of tiles) {
         tile.addEventListener('click', function() {
@@ -245,7 +244,7 @@ function checkMoveTile() {
             setTimeout(checkWin, 500); //checkWin runs faster than moveTile and therefor the winning message appears
             }                          //right after the final click but before the tile moves to the right spot. So checkWin is set half second 
         });                            //delayed after moveTile.
-    };    
+    }    
 }      
         
 
@@ -266,7 +265,7 @@ function checkWin() {
     
     if(win){
         let clock = document.getElementById("timer");
-        alert("Congratulations, You spend" + clock.innerHTML + "s solve the puzzle!")
+        alert("Congratulations, You spend" + clock.innerHTML + "s solve the puzzle!");
         sumScore();
         clearTimeout(timer);
         document.getElementById("start").textContent = "Start";    
