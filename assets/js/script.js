@@ -31,8 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 /**Display game guide when user clicking on 'Game Guide' button*/
 function openGuide() {
-    let guideModal = document.getElementById("guide-modal");
-    let guideBtn = document.getElementById("guide-btn");
+    let guideModal = document.getElementById("guide-modal");    
     guideModal.style.display = "block";
     }
 
