@@ -302,7 +302,7 @@ For screen sizes from 390px wide up
 }
 
 /* For screen sizes from 1280px wide up (1280X802) */
-/* 
+
 @media screen and (min-width: 1280px) {
     td {
         width: 55px;
@@ -311,7 +311,7 @@ For screen sizes from 390px wide up
     .game-area {
         height: 400px;
     }
-} */ 
+} 
 
 /* For screen sizes from 1600px wide up (1600X992) */
 
