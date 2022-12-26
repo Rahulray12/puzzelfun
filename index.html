@@ -42,8 +42,7 @@
                             <li>5x5 puzzle: Hard</li>
                         </ul>                  
                     <br>
-                    <p>You will be timed when 'Start' button clicked but feel free to pause the game at any occasion.</p>
-                    </p>
+                    <p>You will be timed when 'Start' button clicked but feel free to pause the game at any occasion.</p>                    
                 </div>
                 <div class="guide-footer">
                     <h3>Have Fun!<i class="fa-regular fa-face-smile-wink"></i></h3>
@@ -53,17 +52,17 @@
     </header>
     <main>
         <!-- Selection of puzzle types -->
-        <section class="game-menu">
+        <div class="game-menu">
             <button data-type="3">3X3<i id="green" class="fa-solid fa-puzzle-piece"></i></button>
             <button data-type="4">4X4<i id="orange" class="fa-solid fa-puzzle-piece"></i></button>
             <button data-type="5">5X5<i id="purple" class="fa-solid fa-puzzle-piece"></i></button>
-        </section>
+        </div>
         <!-- The area where default or selected game dispays -->
-        <section class="game-area">
+        <div class="game-area">
             <div id="puzzle"></div>
-        </section>
+        </div>
         <!-- buttons for user to start game, pause and resume the timer. Display time and score-->
-        <section class="function">
+        <div class="function">
             <div class="game-func">
                 <button data-type="start" class="game-func" id="start">Start</button>
                 <button data-type="pause" class="game-func" id="pause">Pause</button>
@@ -73,7 +72,7 @@
                 <p><i class="fa-regular fa-clock fa-xl"></i> <span id="timer">0</span><span>s</span></p>
                 <p><i class="fa-solid fa-medal fa-xl"></i> <span id="score">0</span></p>
             </div>        
-        </section>     
+        </div>     
      </main>
      <!-- footer: keep in touch -->
     <footer>
