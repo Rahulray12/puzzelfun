@@ -7,14 +7,18 @@ Puzzle Fun is a web based online game built in with HTML, CSS and JavaScript. It
 | Site Goals| User Benefits | 
 |:------------- | :------------ | 
 |Short game with simple instruction | Simple and short Brain excercise | 
-|Easy and intuitive navigation| Easy to start, exit and restart|
+|Easy and intuitive navigation| Easy to start, exit and re-enter the game|
 |Responsive design | Able to play on any device (keyboard or touchscreen)|  
-|Selection of Deficulty levels|A choice of easy or challenge|
-|Relax and also engaging |Confortable to play|
+|Selection of Deficulty levels|A choice of easy or challenge game|
+|Relax game environment |Confortable to play|
 |interactive to the player|Have a control in running the game|
 |Score tracking and timimg|Able to see the performance|
 
 Press CTRL+ Click [here](https://yuyizhong.github.io/puzzelfun/) to visit the live website.
 
 
+## Features
+This site was built based on a simple and intutive principle. It only contains one page with the puzzle game created and inserted each time by javascript according to users instruction. The whole layout is simple and easy to navigate, and the purpose of the site is staight-forward. Icons and aria-lables are used through out the web page to enhance suers' comprehension.  
+
+* 
 
