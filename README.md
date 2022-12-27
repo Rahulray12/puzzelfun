@@ -2,7 +2,7 @@
 
 ## Introduction
 Puzzle Fun is a web based online game built in with HTML, CSS and JavaScript. It is based on simple classic sliding square puzzle game. Users would receive amazing cognitive benefits while having fun. Puzzle Fun is designed to target those who would like a short fun game to play regularly to improve their memeory, problem solving skills and reduce their stress level.  
-![Responsive Screenshot Mockup](assets/img/screenshots/responsive.png)  
+![Responsive Screenshot Mockup](assets/img/readme-screenshots/responsive.png)  
 
 | Site Goals| User Benefits | 
 |:------------- | :------------ | 
@@ -18,7 +18,19 @@ Press CTRL+ Click [here](https://yuyizhong.github.io/puzzelfun/) to visit the li
 
 
 ## Features
-This site was built based on a simple and intutive principle. It only contains one page with the puzzle game created and inserted each time by javascript according to users instruction. The whole layout is simple and easy to navigate, and the purpose of the site is staight-forward. Icons and aria-lables are used through out the web page to enhance suers' comprehension.  
+This site was built based on a simple and intutive principle. It only contains one page with the puzzle game created and inserted each time by javascript according to users' instruction. The whole layout is simple and easy to navigate, and the purpose of the site is straight-forward. Icons and aria-lables are used through out the web page to enhance suers' comprehension. 
+<img src="assets/image/readme-screenshots/pageload.png> 
 
-* 
 
+### Existing Features
+
+- **Favicon**
+   - A favicon is implemented with a colorful four-pieces puzzle.
+   - This puzzle logo appears in the the tab header to allow the user to easily identify the website while multiple tabs opening.
+   <img src="assets/image/readme-screenshots/favicon.png">  
+
+- ****
+   - A site wide favicon will be implemented with the pink pregnant women keeling icon.
+   - The Mama Yogis' logo will appear in the the tabs header to allow the user to easily identify the website while multiple tabs open.
+
+   <img src="assets/image/readme-screenshot/favicon.PNG">
