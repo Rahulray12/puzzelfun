@@ -20,7 +20,7 @@
         <h1>
             <img class="logo" src="assets/img/logo/logo1.png" alt="logo"> puzzle Fun
         </h1>
-        <button data-type="guide" id="guide-btn">Game Guide</button>
+        <button data-type="guide" id="guide-btn" aria-label="Game Instruction">Game Guide</button>
         <div class="guide-container" id="guide-modal">
             <div class="game-guide">
                 <div class="guide-header">
@@ -53,9 +53,9 @@
     <main>
         <!-- Selection of puzzle types -->
         <div class="game-menu">
-            <button data-type="3">3X3<i id="green" class="fa-solid fa-puzzle-piece"></i></button>
-            <button data-type="4">4X4<i id="orange" class="fa-solid fa-puzzle-piece"></i></button>
-            <button data-type="5">5X5<i id="purple" class="fa-solid fa-puzzle-piece"></i></button>
+            <button data-type="3" aria-label="3x3 puzzle game">3X3<i id="green" class="fa-solid fa-puzzle-piece"></i></button>
+            <button data-type="4" aria-label="4x4 puzzle game">4X4<i id="orange" class="fa-solid fa-puzzle-piece"></i></button>
+            <button data-type="5" aria-label="5x5 puzzle game">5X5<i id="purple" class="fa-solid fa-puzzle-piece"></i></button>
         </div>
         <!-- The area where default or selected game dispays -->
         <div class="game-area">
@@ -64,9 +64,9 @@
         <!-- buttons for user to start game, pause and resume the timer. Display time and score-->
         <div class="function">
             <div class="game-func">
-                <button data-type="start" class="game-func" id="start">Start</button>
-                <button data-type="pause" class="game-func" id="pause">Pause</button>
-                <button data-type="resume" class="game-func" id="resume">Resume</button>
+                <button data-type="start" class="game-func" id="start" aria-label="Button to start the game">Start</button>
+                <button data-type="pause" class="game-func" id="pause" aria-label="Button to pause the timer">Pause</button>
+                <button data-type="resume" class="game-func" id="resume" aria-label="Button to continue the timer">Resume</button>
             </div>
             <div class="game-func">
                 <p><i class="fa-regular fa-clock fa-xl"></i> <span id="timer">0</span><span>s</span></p>
