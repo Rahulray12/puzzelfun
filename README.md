@@ -37,6 +37,7 @@ This site was built based on a simple and intutive principle. It only contains o
 
 - **Game Guide Modal**
    - A modal button created underth the page title is named "Game Guide". It contains the game information , rull and level difference for users' reference.   
+   <img src="assets/img/readme-screenshots/guidemodal.png">  
    - By clicking on it, a detailed game guide block drops out. When the user reading it on mobile, a scroll bar appears for them to scroll through the guide. When screen size is big enough, the scroll bar becomes hidden.
    - The benifit of having the game guide as a modal makes the website clean and neat. 
    - A zoom animation used when the guide block opens.    
@@ -62,8 +63,9 @@ This site was built based on a simple and intutive principle. It only contains o
    <img src="assets/img/readme-screenshots/demopuzzle5x5.png">
 
 - **Control Panel**
-   - Control buttons listed underneath the game area give flexibility to users to run the game.
-      <img src="assets/img/readme-screenshots/controlpanel.png">
+   - Control buttons listed underneath the game area give flexibility to users to run the game.    
+   <img src="assets/img/readme-screenshots/controlpanel.png">
+
    - **Start** Button:  
       - **"Start"** button allows the the tiles in the demo puzzle to shuffle and a new game with the empty tile in **BLACK**will be ready to play.
       - After clicking on the "start" button, it changes to **“Restart"**. Users can click on **Restart** button any time to refresh a new puzzle within the same game type.
@@ -78,6 +80,9 @@ This site was built based on a simple and intutive principle. It only contains o
       - It continue the timer from where it stops.   
       <img src="assets/img/readme-screenshots/resume.png">    
 
+- **Control Panel**
+   - Control buttons listed underneath the game area give flexibility to users to run the game.
+      <img src="assets/img/readme-screenshots/controlpanel.png">
 
 
 
