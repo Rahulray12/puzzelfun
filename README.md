@@ -36,16 +36,21 @@ This site was built based on a simple and intutive principle. It only contains o
    <img src="assets/img/readme-screenshots/logo-title.png">  
 
 - **Game Guide Modal**
-   - A modal button created underth the page title is named "Game Guide". It contains the instruction and game information for users' reference.   
+   - A modal button created underth the page title is named "Game Guide". It contains the game information , rull and level difference for users' reference.   
    - By clicking on it, a detailed game guide block drops out. When the user reading it on mobile, a scroll bar appears for them to scroll through the guide. When screen    
      size is big enough, the scroll bar becomes hidden.
-   - The benifit of having the game guide as a modal makes the website clean and neat.     
+   - The benifit of having the game guide as a modal makes the website clean and neat. 
+   - A zoom animation used when the guide block opens.    
    <img src="assets/img/readme-screenshots/gameguide.png">  
 
+- **Puzzle type selection panel**
+   - Puzzles are divided into 3 types according to the difficulty level.   
+   - They are listed at the selection panel for the user to choose. Users can either have a easy go by starting a 3x3 puzzle, or take a challenge for more complicated          
+     level.     
+   <img src="assets/img/readme-screenshots/gamemenu.png">  
 
-- **Game Guide Modal**
-   - A modal button created underth the page title is named "Game Guide". It contains the instruction and game information for users' reference.   
-   - By clicking on it, a detailed game guide block drops out. When the user reading it on mobile, a scroll bar appears for them to scroll through the guide. When screen    
-     size is big enough, the scroll bar becomes hidden.
-   - The benifit of having the game guide as a modal makes the website clean and neat.     
+- **Puzzle type selection panel**
+   - Puzzles are divided into 3 types according to the difficulty level.   
+   - They are listed at the selection panel for the user to choose. Users can either have a easy go by starting a 3x3 puzzle, or take a challenge for more complicated          
+     level.     
    <img src="assets/img/readme-screenshots/gameguide.png">  
