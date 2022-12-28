@@ -63,9 +63,9 @@ This site was built based on a simple and intutive principle. It only contains o
 
 - **Control Panel**
    - Control buttons listed underneath the game area give flexibility to users to run the game.
-   <img src="assets/img/readme-screenshots/controlpanel.png">
+      <img src="assets/img/readme-screenshots/controlpanel.png">
    - **Start** Button:  
-      - **"*Start"** button allows the the tiles in the demo puzzle to shuffle and a new game with the empty tile in **BLACK**will be ready to play.
+      - **"Start"** button allows the the tiles in the demo puzzle to shuffle and a new game with the empty tile in **BLACK**will be ready to play.
       - After clicking on the "start" button, it changes to **“Restart"**. Users can click on **Restart** button any time to refresh a new puzzle within the same game type.
       - By click on both **Start** and **Restart** button, the clock icon will reset to 0 and start to time.
       - Which means users have the freedom to exit the current puzzle game before finishing it and start a new game.
@@ -75,11 +75,9 @@ This site was built based on a simple and intutive principle. It only contains o
       - Their performance wont be affected by interruptions.  
       <img src="assets/img/readme-screenshots/pause.png">    
    - **Resume** Button
-      - It continue the timer from where it stops.
+      - It continue the timer from where it stops.   
       <img src="assets/img/readme-screenshots/resume.png">    
 
 
 
 
-   - As the page loaded, a default 3x3 demo puzzle is appeared at the center of the game area. The user can either click on "Start" to play a 3x3 puzzle or click on one of      the game type buttons to play a more challenging puzzle.      
-   <img src="assets/img/readme-screenshots/controlpanel.png">  
