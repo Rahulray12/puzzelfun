@@ -54,3 +54,10 @@ This site was built based on a simple and intutive principle. It only contains o
    - They are listed at the selection panel for the user to choose. Users can either have a easy go by starting a 3x3 puzzle, or take a challenge for more complicated          
      level.     
    <img src="assets/img/readme-screenshots/gameguide.png">  
+
+- **Game area and default game**
+   - A beaufiful picture of bamboo leaves is set as the background image for game area.  The eye friendly green color would hopfully reduce the user's eye strain. This photo 
+     image is soppused to imediately create a peaceful and leisurely enviroment.   
+   - As the page loaded, a default 3x3 demo puzzle is appeared at the center of the game area. The user can either click on "Start" to play a 3x3 puzzle or click on one of      
+     the game type buttons to play a more challenging puzzle.      
+   <img src="assets/img/readme-screenshots/gamearea.png">  
