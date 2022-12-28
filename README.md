@@ -54,18 +54,19 @@ This site was built based on a simple and intutive principle. It only contains o
    <img src="assets/img/readme-screenshots/gamearea.png">  
 
 - **Demo puzzle**
-   - Demo puzzle appears after the game type is selected. It demonstrates what a resolved puzzle in this particular type would look alike.   
-   - Its tiles are not movable and their color are all in white. Therefore users wont mistake it as the game itself.  
+   - Demo puzzle appears after the game type is selected. It demonstrates what a resolved puzzle in this particular puzzle type would look alike.   
+   - Its tiles are not movable and tiles color are all in white. Therefore users wont mistake it as the game itself.  
    **4x4 Demo Puzzle**     
    <img src="assets/img/readme-screenshots/demopuzzle4x4.png">    
    
    **5x5 Demo Puzzle**  
    <img src="assets/img/readme-screenshots/demopuzzle5x5.png">
+   - When Demo puzzle displays in the game area, the control panel and user performance trackers remain as default setting.  
+   <img src="assets/img/readme-screenshots/undergamepanel.png">
 
 - **Control Panel**
    - Control buttons listed underneath the game area give flexibility to users to run the game.    
    <img src="assets/img/readme-screenshots/controlpanel.png">
-
    - **Start** Button:  
       - **"Start"** button allows the the tiles in the demo puzzle to shuffle and a new game with the empty tile in **BLACK**will be ready to play.
       - After clicking on the "start" button, it changes to **“Restart"**. Users can click on **Restart** button any time to refresh a new puzzle within the same game type.
@@ -80,9 +81,20 @@ This site was built based on a simple and intutive principle. It only contains o
       - It continue the timer from where it stops.   
       <img src="assets/img/readme-screenshots/resume.png">    
 
-- **Control Panel**
-   - Control buttons listed underneath the game area give flexibility to users to run the game.
-      <img src="assets/img/readme-screenshots/controlpanel.png">
+- **Game Time and Score trackers**
+   - The intuitive clock and medal icons represent the timer and score.
+    <img src="assets/img/readme-screenshots/timeandscore.png">
+   - Timer tracks the total sesonds which user spend in each single game. It resets to zero everytime a new game is displayed regardless puzzle type. 
+   - Score increments within one level(either 3x3,4x4 or 5x5 puzzles). It resets to zero when user hits one of the puzzle type button.
+   <img src="assets/img/readme-screenshots/score.png">
+   <img src="assets/img/readme-screenshots/score2.png">
+
+- **Footer**
+   - A footer is fixed to the bottom of the viewport and it is always there while users scroll up and down the page. 
+   - It contains site owner's GITHUB link which will open in a new tab to allow easy navigation for users.   
+   <img src="assets/img/readme-screenshots/footer.png">
+
+
 
 
 
