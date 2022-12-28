@@ -54,7 +54,8 @@ This site was built based on a simple and intutive principle. It only contains o
 
 - **Demo puzzle**
    - Demo puzzle appears after the game type is selected. It demonstrates what a resolved puzzle in this particular type would look alike.   
-   - Its tiles are not movable and their color are all in white. The user wont mistake it as the game itself.       
-   [4x4 Demo Puzzle](assets/img/readme-screenshots/demopuzzle4x4.png)
-   [5x5 Demo Puzzle](assets/img/readme-screenshots/demopuzzle5x5.png)   
-
+   - Its tiles are not movable and their color are all in white. Therefore users wont mistake it as the game itself.  
+   **4x4 Demo Puzzle**     
+   <img src="assets/img/readme-screenshots/demopuzzle4x4.png">
+   **5x5 Demo Puzzle**
+   <img src="assets/img/readme-screenshots/demopuzzle5x5.png">
