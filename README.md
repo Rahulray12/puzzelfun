@@ -37,7 +37,7 @@ This site was built based on a simple and intutive principle. It only contains o
 
 - **Game Guide Modal**
    - A modal button created underth the page title is named "Game Guide". It contains the game information , rull and level difference for users' reference.   
-   <img src="assets/img/readme-screenshots/guidemodal.png">  
+   <img src="assets/img/readme-screenshots/guidemodal.png">    
    - By clicking on it, a detailed game guide block drops out. When the user reading it on mobile, a scroll bar appears for them to scroll through the guide. When screen size is big enough, the scroll bar becomes hidden.
    - The benifit of having the game guide as a modal makes the website clean and neat. 
    - A zoom animation used when the guide block opens.    
@@ -65,35 +65,42 @@ This site was built based on a simple and intutive principle. It only contains o
    <img src="assets/img/readme-screenshots/undergamepanel.png">
 
 - **Control Panel**
-   - Control buttons listed underneath the game area give flexibility to users to run the game.    
-   <img src="assets/img/readme-screenshots/controlpanel.png">
+   - Control buttons listed underneath the game area give flexibility to users to run the game.  
+   <img src="assets/img/readme-screenshots/controlpanel.png">  
    - **Start** Button:  
       - **"Start"** button allows the the tiles in the demo puzzle to shuffle and a new game with the empty tile in **BLACK**will be ready to play.
       - After clicking on the "start" button, it changes to **“Restart"**. Users can click on **Restart** button any time to refresh a new puzzle within the same game type.
       - By click on both **Start** and **Restart** button, the clock icon will reset to 0 and start to time.
-      - Which means users have the freedom to exit the current puzzle game before finishing it and start a new game.
+      - Which means users have the freedom to exit the current puzzle game before finishing it and start a new game.  
       <img src="assets/img/readme-screenshots/start.png">    
    - **Pause** Button
       - **Pause** Button allows the user to pause the timer anytime they needed.
-      - Their performance wont be affected by interruptions.  
+      - Their performance wont be affected by interruptions.    
       <img src="assets/img/readme-screenshots/pause.png">    
    - **Resume** Button
       - It continue the timer from where it stops.   
       <img src="assets/img/readme-screenshots/resume.png">    
 
 - **Game Time and Score trackers**
-   - The intuitive clock and medal icons represent the timer and score.
-    <img src="assets/img/readme-screenshots/timeandscore.png">
+   - The intuitive clock and medal icons represent the timer and score.  
+    <img src="assets/img/readme-screenshots/timeandscore.png">    
    - Timer tracks the total sesonds which user spend in each single game. It resets to zero everytime a new game is displayed regardless puzzle type. 
    - Score increments within one level(either 3x3,4x4 or 5x5 puzzles). It resets to zero when user hits one of the puzzle type button.
-   <img src="assets/img/readme-screenshots/score.png">
-   <img src="assets/img/readme-screenshots/score2.png">
+   - Witht the time and score tracking system, users are able to see their performance. Which makes the game more engaging.
+   <img src="assets/img/readme-screenshots/score.png">    
+   <img src="assets/img/readme-screenshots/score2.png">    
 
 - **Footer**
    - A footer is fixed to the bottom of the viewport and it is always there while users scroll up and down the page. 
    - It contains site owner's GITHUB link which will open in a new tab to allow easy navigation for users.   
-   <img src="assets/img/readme-screenshots/footer.png">
+   <img src="assets/img/readme-screenshots/footer.png">   
 
+- **Winning messsage**
+   - Wining message appears when the user solve the puzzle.  
+   - It alerts a congratulation message including the time spent for solving this puzzle.   
+   <img src="assets/img/readme-screenshots/alertmsg5x5.png">   
+
+   
 
 
 
