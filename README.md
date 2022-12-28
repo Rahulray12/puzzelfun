@@ -37,27 +37,24 @@ This site was built based on a simple and intutive principle. It only contains o
 
 - **Game Guide Modal**
    - A modal button created underth the page title is named "Game Guide". It contains the game information , rull and level difference for users' reference.   
-   - By clicking on it, a detailed game guide block drops out. When the user reading it on mobile, a scroll bar appears for them to scroll through the guide. When screen    
-     size is big enough, the scroll bar becomes hidden.
+   - By clicking on it, a detailed game guide block drops out. When the user reading it on mobile, a scroll bar appears for them to scroll through the guide. When screen size is big enough, the scroll bar becomes hidden.
    - The benifit of having the game guide as a modal makes the website clean and neat. 
    - A zoom animation used when the guide block opens.    
    <img src="assets/img/readme-screenshots/gameguide.png">  
 
 - **Puzzle type selection panel**
    - Puzzles are divided into 3 types according to the difficulty level.   
-   - They are listed at the selection panel for the user to choose. Users can either have a easy go by starting a 3x3 puzzle, or take a challenge for more complicated          
-     level.     
+   - They are listed at the selection panel for the user to choose. Users can either have a easy go by starting a 3x3 puzzle, or take a challenge for more complicated          level.     
    <img src="assets/img/readme-screenshots/gamemenu.png">  
 
-- **Puzzle type selection panel**
-   - Puzzles are divided into 3 types according to the difficulty level.   
-   - They are listed at the selection panel for the user to choose. Users can either have a easy go by starting a 3x3 puzzle, or take a challenge for more complicated          
-     level.     
-   <img src="assets/img/readme-screenshots/gameguide.png">  
-
 - **Game area and default game**
-   - A beaufiful picture of bamboo leaves is set as the background image for game area.  The eye friendly green color would hopfully reduce the user's eye strain. This photo 
-     image is soppused to imediately create a peaceful and leisurely enviroment.   
-   - As the page loaded, a default 3x3 demo puzzle is appeared at the center of the game area. The user can either click on "Start" to play a 3x3 puzzle or click on one of      
-     the game type buttons to play a more challenging puzzle.      
+   - A beaufiful picture of bamboo leaves is set as the background image for game area.  The eye friendly green color would hopfully reduce the user's eye strain. This photo image is soppused to imediately create a peaceful and leisurely enviroment.   
+   - As the page loaded, a default 3x3 demo puzzle is appeared at the center of the game area. The user can either click on "Start" to play a 3x3 puzzle or click on one of      the game type buttons to play a more challenging puzzle.      
    <img src="assets/img/readme-screenshots/gamearea.png">  
+
+- **Demo puzzle**
+   - Demo puzzle appears after the game type is selected. It demonstrates what a resolved puzzle in this particular type would look alike.   
+   - Its tiles are not movable and their color are all in white. The user wont mistake it as the game itself.       
+   [4x4 Demo Puzzle](assets/img/readme-screenshots/demopuzzle4x4.png)
+   [5x5 Demo Puzzle](assets/img/readme-screenshots/demopuzzle5x5.png)   
+
