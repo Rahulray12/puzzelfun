@@ -18,8 +18,9 @@ Press CTRL+ Click [here](https://yuyizhong.github.io/puzzelfun/) to visit the li
 
 
 ## Features
-This site was built based on a simple and intutive principle. It only contains one page with the puzzle game created and inserted each time by javascript according to users' instruction. The whole layout is simple and easy to navigate, and the purpose of the site is straight-forward. Icons and aria-lables are used through out the web page to enhance suers' comprehension. 
-<img src="assets/img/readme-screenshots/pageload.png> 
+This site was built based on a simple and intutive principle. It only contains one page with the puzzle game created and inserted each time by javascript according to users' instruction. The whole layout is simple and easy to navigate, and the purpose of the site is straight-forward. Icons and aria-lables are used through out the web page to enhance suers' comprehension.  
+
+<img src="assets/img/readme-screenshots/pageload.png"> 
 
 
 ### Existing Features
@@ -29,8 +30,7 @@ This site was built based on a simple and intutive principle. It only contains o
    - This puzzle logo appears in the the tab header to allow the user to easily identify the website while multiple tabs opening.
    <img src="assets/img/readme-screenshots/favicon.png">  
 
-- ****
-   - A site wide favicon will be implemented with the pink pregnant women keeling icon.
-   - The Mama Yogis' logo will appear in the the tabs header to allow the user to easily identify the website while multiple tabs open.
-
-   <img src="assets/img/readme-screenshots/">
+- **Logo and Title**
+   - The colorful puzzle logo and the gemstone-sparkled title bring the website alive.   
+   - It carrys out the simple style and declares the the purpose of the website: puzzle games and fun!  
+   <img src="assets/img/readme-screenshots/logo-title.png">
