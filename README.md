@@ -492,10 +492,11 @@ Navigate to the GitHub Repository you want to clone to use locally:
 
 ## Credits ##
 
-As always my mentor Daisy Mc Girr gives me very helpful suggestions to make a quality website!
+As always my mentor Daisy Mc Girr gives me very suggestive advices to make a quality website!
 
  ### Content ###
- - I borrowed a block of code to shuffle the puzzle numbers from [Satck Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array). It is also commented at script.js.
+ - I borrowed a block of code to shuffle the puzzle numbers from [Satck Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array). The acture code is also commented at script.js. 
+ - I built a sticky footer using the method from [CSS-Tricks](https://css-tricks.com/couple-takes-sticky-footer/).  
  - Favicon files were created at [Favicon Generator](https://favicon.io/favicon-converter/)
  - The icons were taken from [Font Awesome](https://fontawesome.com/)
  - I used [W3school](w3schools.com) to check the syntaxes and relevant attributes to get my website presented the way I wanted.
