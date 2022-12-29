@@ -175,14 +175,23 @@ li {
 }
 
 /* Footer */
-footer {
-    width: 100%;
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+footer {    
     margin-top: 20px;    
     align-items: center;
     border: 5px groove #e5eaf9;
-    position: fixed;
-    bottom: 0;
+    flex-shrink:0;       
 }
+
 
 footer h2 {
     text-transform: capitalize;

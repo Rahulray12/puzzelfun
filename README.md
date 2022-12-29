@@ -492,7 +492,7 @@ Navigate to the GitHub Repository you want to clone to use locally:
 
 ## Credits ##
 
-As always my mentor Daisy Mc Girr give me very helpful suggestions to make a quality website!
+As always my mentor Daisy Mc Girr gives me very helpful suggestions to make a quality website!
 
  ### Content ###
  - I borrowed a block of code to shuffle the puzzle numbers from [Satck Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array). It is also commented at script.js.
