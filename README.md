@@ -328,3 +328,22 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
      - Timer starts from 0.
      - It was as expected.  
      
+ *Restart Button*
+
+- Test if restart button reshuffle the puzzle, reset the timer and current score value remains unchanged. 
+
+  *Steps to test Chech and Move tiles*
+
+     - Navigate to Puzzle Fun default page.  
+     - Step 1. Click on "Start" button and then click on "Restart" when text changed.  
+     - Click on the 3x3 type button and conduct step 1.  
+     - Click on the 4x4 type button and conduct step 1.  
+     - Click on the 5x5 type button and conduct step 1.  
+
+  *Result:*
+
+     - The numbers of the puzzle shuffled everytime the restart button pressed.  
+     - The timer reset to zero and start a new timing.  
+     - Score remains as unchanged.  
+     - It was as expected.  
+
