@@ -201,7 +201,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
 - Testing was performed on the Game Guide button in heading underneath the page tile to ensure the game instruction works as planned.  
 
-  *Steps to test Telephone Number*
+  *Steps to test Guide Modal*
 
      - Navigate to Puzzle Fun and click the button shows "Game Guide".  
 
@@ -214,23 +214,58 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
      - Also it can be closed by clicking on "x" and the instrruction block becomes hidden again.
      - It was as expected.  
 
- *Game Guide Modal*
+ *Game Type Buttons*
 
-- Testing was performed on the Game Guide button in heading underneath the page tile to ensure the game instruction works as planned.  
+- The 3 buttons under the Game guide represent 3 types of puzzle game. Tests were carried out to check if they bring the users the right puzzle type with control buttons, time and score trackers always showing default setting whenever the user clicking on them.
 
-  *Steps to test Telephone Number*
+  *Steps to test Game Type 3x3 puzzle*
 
-     - Navigate to Puzzle Fun and click the button shows "Game Guide".  
+     - Click the button shows "3x3" after window loaded. 
+     - Click on this button during a game (after "Start" got clicked).
+     - Click on this button after a game got paused.  
+     - Click on this button after a game resumed.  
+     - Click on this button when any of the game types was selected.  
 
   *Result:*
 
-     - A block of game instruction pops out at the right position. 
-     - The instruction page contains header, footer and the main boday. Nothing is missing or hidden.
-     - Scroll bar appears on the side of the main boday when visiting the site through a mobile device and it works well.
-     - Scroll bar disapears when the screen space is big to show all the instruction contents. 
-     - Also it can be closed by clicking on "x" and the instrruction block becomes hidden again.
+     - A 3 rows and 3 coloms puzzle appeared at the center of the game area.  
+     - The tiles are all in white and unmovable.
+     - Numbers are sorted in ascending numerical order with the last tile not having any number.  
+     - Game control buttons are "Satrt", "Pause" and "Resume".  
+     - Timer and Score remain as default setting shows "0".  
      - It was as expected.  
 
+  *Steps to test Game Type 4x4 puzzle*
 
+     - Click the button shows "4x4" after window loaded. 
+     - Click on this button during a game (after "Start" got clicked).
+     - Click on this button after a game got paused.  
+     - Click on this button after a game resumed.  
+     - Click on this button when any of the game types was selected.  
 
+  *Result:*
+
+     - A 4 rows and 4 coloms puzzle appeared at the center of the game area.  
+     - The tiles are all in white and unmovable.
+     - Numbers are sorted in ascending numerical order with the last tile not having any number.  
+     - Game control buttons are "Satrt", "Pause" and "Resume".  
+     - Timer and Score remain as default setting shows "0".  
+     - It was as expected.  
+
+  *Steps to test Game Type 5x5 puzzle*  
+
+     - Click the button shows "5x5" after window loaded. 
+     - Click on this button during a game (after "Start" got clicked).
+     - Click on this button after a game got paused.  
+     - Click on this button after a game resumed.  
+     - Click on this button when any of the game types was selected.  
+
+  *Result:*
+
+     - A 5 rows and 5 coloms puzzle appeared at the center of the game area.  
+     - The tiles are all in white and unmovable.
+     - Numbers are sorted in ascending numerical order with the last tile not having any number.  
+     - Game control buttons are "Satrt", "Pause" and "Resume".  
+     - Timer and Score remain as default setting shows "0".  
+     - It was as expected.  
 
