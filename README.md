@@ -100,6 +100,10 @@ This site was built based on a simple and intuitive principle. It only contains 
    - It alerts a congratulation message including the time spent for solving this puzzle.   
    <img src="assets/img/readme-screenshots/alertmsg5x5.png">   
 
+- **404 Error Page**
+   - A 404 Error page with Puzzle Fun header and footer to indicate the user the resource they were trying to reach not found on the server.
+   - The home page link is provided to bring the user back to the main page.
+
 ## Features left to implement
 
 - Games can be extended from number puzzles to Jigsaws. In order to have a background picture for each tile and move together with the tiles to form a whole picture, canvas Js is ideal in this case.  
