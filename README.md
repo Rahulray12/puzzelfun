@@ -289,4 +289,24 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
      - The tiles not adjacent to the black tile remain unmoved when clcking on them.
      - It was as expected.  
    
-Click on the 3x3 type button and repeat steps 1 to 3.
+ *CheckWin*
+
+- Test was carried out to see if a winning message pop out when the user solve the puzzle.   
+
+  *Steps to test CheckWin*
+
+     - Navigate to Puzzle Fun default page.  
+     - Step 1. Click on "Start" button.  
+     - Step 2. When a game starts, click on the tile you want to move until the puzzle is solved.  
+     - Step 3. Click on "Restart" button, after a new puzzle loaded, do Step 2.  
+     - Click on the 3x3 type button and repeat steps 1 to 3.  
+     - Click on the 4x4 type button and repeat steps 1 to 3.  
+     - Click on the 5x5 type button and repeat steps 1 to 3.  
+
+  *Result:*
+
+     - A congratulation messge box popped out and the timer stopped.  
+     - After click on "ok" at the message box, message disappeared. Timer remains at the when it was stopped and score add one more than before .
+     - It was as expected.
+     
+     
