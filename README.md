@@ -269,3 +269,24 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
      - Timer and Score remain as default setting shows "0".  
      - It was as expected.  
 
+ *Check and Move tiles*
+
+- Game rull is to move one of the tiles adjacent to the empty tile and sort the numbers to the right order. The test is to find out if only the tiles adjacent to the empty tiles can be moved and the others are not. 
+
+  *Steps to test Chech and Move tiles*
+
+     - Navigate to Puzzle Fun default page.  
+     - Step 1. Click on "Start" button.  
+     - Step 2. When a game starts, randomly click on any of the tiles.  
+     - Step 3. Click on "Restart" button, after a new puzzle loaded, click on any of the tiles.  
+     - Click on the 3x3 type button and repeat steps 1 to 3.  
+     - Click on the 4x4 type button and repeat steps 1 to 3.  
+     - Click on the 5x5 type button and repeat steps 1 to 3.  
+
+  *Result:*
+
+     - Only the tiles adjacent to the black empty tile can be moved by clicking and they will swap their position with the black tile.  
+     - The tiles not adjacent to the black tile remain unmoved when clcking on them.
+     - It was as expected.  
+   
+Click on the 3x3 type button and repeat steps 1 to 3.
