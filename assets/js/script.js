@@ -173,7 +173,7 @@ function start() {
     if(startButton.innerHTML = "Restart") {
         clearTimeout(timer);
         startButton.disabled = true;  
-        setTimeout(restartBtn,2000);//Disable the restart button for 2 seconds before next click
+        setTimeout(restartBtn,2000);//Disable the restart button for 2 seconds after each click
     }                               //To prevent users keeping on press it and mess up the timers running
     shuffle();
     startButton.innerHTML = "Restart";

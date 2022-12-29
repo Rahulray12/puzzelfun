@@ -133,9 +133,37 @@ This site was built based on a simple and intutive principle. It only contains o
 
 ## Testing
 
+### Testing during development
+Continuous testings were carried out througout of the site development. The whole project was broken into small sections and steps. Each part was checked and amended to the right standard before moving to next one. 
+
+*Steps to test:*
+
+- HTML and CSS outcomes were instantly viewed through a live server window. It would be checked and adjusted (if necessory) before commitment.   
+- When it moved to JavaScrip, how to make the game working the way planned was well thought out and designed before coding. Ideas then become each function names and their contents were added one by one at later stage.
+- To avoid increasing difficulty of debugging, one function was coded for achieving only one thing. Also this function would be tested constantly after each correction. 
+- The *developer tool* was helpful to indicate where the errors were. 
+- In the case of no errors were returned but function not working, `console.log` was used to test each line of the code to find where the possible errors located. 
+- Until one function is working, then move to next one. And same procedures would be carried out.
+- When individual functions are working well by itself, but issues appeared when running together. Then the relevent functions would be reviewed logically and adjusted accordingly.
+
+*Result*:
+
+- Interesting issues encountered:
+   - **Issue No. 1**  
+   - There were 2 functions called sequently to move tile and then check if it wins. If the user wins, the `checkWin()` will alert a winning messsage. At the test, the winning message appears right after the user clicking on the tile but before it moves to the right spot. It happened as the `checkWin() ` was processed faster than `MoveTile()`. 
+   - The solution was to use `setTimeout()` method to execute `checkWin()` half of a second later than `MoveTile()`. 
+
+   - **Issue No.2**  
+      - The "Restart” button is designed for users to reshuffle the puzzle anytime during the game if they don't want to continue working on the current one for any reason. Everytime after reshuffle, a new game appears and the timer will reset and start a new one (by processing `clearTimeout(timer)` and then `setTimeout(timing, 1000)`). 
+      - By testing it, I fund if the user keeps clicking on "Restart" at a fast speed, it will mess up the timer. Timer wont reset to 0, and it would run faster and faster than it supposed to be. Until the user stop clicking, then the timer will slowly go back to normal speed.
+      - First, I tried to change `setTimeout()` method to `setInterval()` method, but the issue remains.
+      - After a research, I realised that JavaScript timer would have this type of issue as it using a single threaded language. When clicking is too fast, computer wont have enough time to complete one request before receiving another one. And it tried to execute all the orders at same time.
+      - As to make a smarter timer is not possible in JavaScript, my solution was to limit the clicking behaviour. To do that, I disable the "Restart” button for 2 seconds after each click.
+- After finishing building, the website and game looks and works as planned.  
+ 
 ### Responsiveness
 
-All pages were tested to ensure responsiveness on screen sizes from 320px and upwards on Chrome, Edge and Firefox.
+This site was tested to ensure responsiveness on screen sizes from 320px and upwards on Chrome, Edge and Firefox.
 
 *Steps to test:*
 
@@ -146,9 +174,10 @@ All pages were tested to ensure responsiveness on screen sizes from 320px and up
 
 *Result*:
 
-- Website is responsive on all screen sizes and no images are pixelated or stretched. No text were overflowed or cut off. No contents were out of their box or get overlapped.
+- Website is responsive on all screen sizes from mobile, tablet, laptop and desktop. No images are pixelated or stretched. No text were overflowed or cut off. No contents were out of their box or get overlapped.
+- It functions well by using both keyborad or touch screen device.
 
-### Accessibility
+### Wave Web Accessibility
 
 [WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/) was used throughout development and for final testing of the deployed website to check for any aid accessibility testing. 
 
