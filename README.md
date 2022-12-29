@@ -78,7 +78,7 @@ This site was built based on a simple and intutive principle. It only contains o
       - Their performance wont be affected by interruptions.    
       <img src="assets/img/readme-screenshots/pause.png">      
    - **Resume** Button  
-      - It continue the timer from where it stops.     
+      - It continues the timer from where it stopped.   
       <img src="assets/img/readme-screenshots/resume.png">      
 
 - **Game Time and Score trackers**  
@@ -134,7 +134,7 @@ This site was built based on a simple and intutive principle. It only contains o
 ## Testing
 
 ### Testing during development
-Continuous testings were carried out througout of the site development. The whole project was broken into small sections and steps. Each part was checked and amended to the right standard before moving to next one. 
+Continuous testings were carried out througout the site development. The whole project was broken into small sections and steps. Each part was checked and amended to the right standard before moving to next one. 
 
 *Steps to test:*
 
@@ -197,6 +197,39 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
 ### Functional Testing
 
+ *Game Guide Modal*
+
+- Testing was performed on the Game Guide button in heading underneath the page tile to ensure the game instruction works as planned.  
+
+  *Steps to test Telephone Number*
+
+     - Navigate to Puzzle Fun and click the button shows "Game Guide".  
+
+  *Result:*
+
+     - A block of game instruction pops out at the right position. 
+     - The instruction page contains header, footer and the main boday. Nothing is missing or hidden.
+     - Scroll bar appears on the side of the main boday when visiting the site through a mobile device and it works well.
+     - Scroll bar disapears when the screen space is big to show all the instruction contents. 
+     - Also it can be closed by clicking on "x" and the instrruction block becomes hidden again.
+     - It was as expected.  
+
+ *Game Guide Modal*
+
+- Testing was performed on the Game Guide button in heading underneath the page tile to ensure the game instruction works as planned.  
+
+  *Steps to test Telephone Number*
+
+     - Navigate to Puzzle Fun and click the button shows "Game Guide".  
+
+  *Result:*
+
+     - A block of game instruction pops out at the right position. 
+     - The instruction page contains header, footer and the main boday. Nothing is missing or hidden.
+     - Scroll bar appears on the side of the main boday when visiting the site through a mobile device and it works well.
+     - Scroll bar disapears when the screen space is big to show all the instruction contents. 
+     - Also it can be closed by clicking on "x" and the instrruction block becomes hidden again.
+     - It was as expected.  
 
 
 
