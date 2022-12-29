@@ -83,7 +83,7 @@ This site was built based on a simple and intutive principle. It only contains o
 
 - **Game Time and Score trackers**  
    - The intuitive clock and medal icons represent the timer and score.    
-    <img src="assets/img/readme-screenshots/timeandscore.png">    
+   <img src="assets/img/readme-screenshots/timeandscore.png">    
    - Timer tracks the total sesonds which user spend in each single game. It resets to zero everytime a new game is displayed regardless puzzle type.   
    - Score increments within one level(either 3x3,4x4 or 5x5 puzzles). It resets to zero when user hits one of the puzzle type button.  
    - Witht the time and score tracking system, users are able to see their performance. Which makes the game more engaging.  
@@ -175,7 +175,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 *Result*:
 
 - Website is responsive on all screen sizes from mobile, tablet, laptop and desktop. No images are pixelated or stretched. No text were overflowed or cut off. No contents were out of their box or get overlapped.
-- It functions well by using both keyborad or touch screen device.
+- It functions well by using both keyborad and touch screen devices.
 
 ### Wave Web Accessibility
 
@@ -183,22 +183,17 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
 *Result*
 - 0 Errors and 0 Contrast errors.
-<img src="assets/img/readme-screenshots/wave.png">   
-
- - Issue fund during the page development:
-   - I originally used 3 identical forms for 3 studio yogo classes booking. All the lables are the same besides the options of the time are different for each class. 
- - Fix:
-   - I merged the forms into 1. As without using JavaScript, I wont be able to provide the relevant time options based on the yoga class selected. I add the radio choice for users to select the yoga class and then put all the time slots in the select drop down list, with class name next to each time slot. 
+<img src="assets/img/testing/wave.png">   
 
 ### Lighthouse Testing
 - Test on desktop
 
-<img src="assets/image/readme-screenshot/lighthouse-desktop.PNG">
+<img src="assets/img/testing/lighthouse-desktop.png">   
 
 
 - Test on mobile
 
-<img src="assets/image/readme-screenshot/lighthouse-mobile.PNG">
+<img src="assets/img/testing/lighthouse-mobi.png">   
 
 ### Functional Testing
 
