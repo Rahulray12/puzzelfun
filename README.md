@@ -415,4 +415,29 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
      - It was as expected. 
 
  *Github Link* 
-- Click on the Github icon at the center of the footer. The specified Github page opens at a new tab.
+- Click on the Github icon at the center of the footer. The specified Github page opens at a new tab.  
+
+### Validator Testing ###
+
+  *HTML Testings* was performed to Puzzle Fun through the [official W3C validator](https://validator.w3.org/). 
+  No Error was fund.
+
+  <img src="assets/img/testing/html-testing.png">   
+
+ 
+  *CSS Testing* was performed to Puzzle Fun through the [official (jigsaw) validator](https://jshint.com/). 
+  No Error was fund.
+
+  <img src="assets/img/testing/jigsaw.png">   
+
+  *JavaScript Testing* was performed to Puzzle Fun through the [Static JavaScript analysis tool](https://jshint.com/). 
+  No Error was fund.
+
+  <img src="assets/img/testing/jshint.png">   
+
+### Unfixed Bugs ###
+
+There is an unfixed bug.
+In order to shuffle the numbers randomly to start each puzzle game, I used a piece of code from Stack Overflow. It picks a number from the original array and excludes it from next draw. Repeating the loop untill all the numbers are picked from the original array. Then a new array of numbers is randomised and no 2 numbers are repeated.
+I is a clever way to randomise numbers but some of the number orders generated from this method will make the puzzle unsolvable. A more comprehensive shuffle method required to fix this bug. With the limited time and available languages, Instead I designed restart button for users to exit the current game anytime when they fund it impossible to solve.
+
