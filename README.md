@@ -307,6 +307,24 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
      - A congratulation messge box popped out and the timer stopped.  
      - After click on "ok" at the message box, message disappeared. Timer remains at the when it was stopped and score add one more than before .
-     - It was as expected.
-     
+     - It was as expected.  
+
+ *Start Button*
+
+- Test is to check after click on "Start" button the game would actually start.
+
+  *Steps to test Chech and Move tiles*
+
+     - Navigate to Puzzle Fun default page.  
+     - Step 1. Click on "Start" button.  
+     - Click on the 3x3 type button and conduct steps 1.  
+     - Click on the 4x4 type button and conduct steps 1.  
+     - Click on the 5x5 type button and conduct steps 1.  
+
+  *Result:*
+
+     - Demo puzzle is replaced with a puzzle game having numbers in random order and a black empty tile .  
+     - "Start" button text changes to "Restart".
+     - Timer starts from 0.
+     - It was as expected.  
      
