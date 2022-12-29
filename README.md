@@ -1,24 +1,24 @@
 # Puzzle Fun
 
 ## Introduction
-Puzzle Fun is a web based online game built in with HTML, CSS and JavaScript. It is based on simple classic sliding square puzzle game. Users would receive amazing cognitive benefits while having fun. Puzzle Fun is designed to target those who would like a short fun game to play regularly to improve their memeory, problem solving skills and reduce their stress level.  
+Puzzle Fun is a web based online game built in with HTML, CSS and JavaScript. It is based on simple classic sliding square puzzle game. Users would receive cognitive benefits while having fun. Puzzle Fun is designed to target those who would like a short fun game to play regularly to improve their memory, problem solving skills and reduce their stress level.  
 ![Responsive Screenshot Mockup](assets/img/readme-screenshots/responsive.png)  
 
 | Site Goals| User Benefits | 
 |:------------- | :------------ | 
-|Short game with simple instruction | Simple and short Brain excercise | 
+|Short game with simple instruction | Simple and short Brain exercises | 
 |Easy and intuitive navigation| Easy to start, exit and re-enter the game|
-|Responsive design | Able to play on any device (keyboard or touchscreen)|  
-|Selection of Deficulty levels|A choice of easy or challenge game|
-|Relax game environment |Confortable to play|
+|Responsive design | Able to play on any device (keyboard or touch screen)|  
+|Selection of Defficulty levels|A choice of easy or challenge game|
+|Relax game environment |Comfortable to play|
 |interactive to the player|Have a control in running the game|
-|Score tracking and timimg|Able to see the performance|
+|Score tracking and timing|Able to see the performance|
 
 Press CTRL+ Click [here](https://yuyizhong.github.io/puzzelfun/) to visit the live website.
 
 
 ## Features
-This site was built based on a simple and intutive principle. It only contains one page with the puzzle game created and inserted each time by javascript according to users' instruction. The whole layout is simple and easy to navigate, and the purpose of the site is straight-forward. Icons and aria-lables are used through out the web page to enhance suers' comprehension.  
+This site was built based on a simple and intuitive principle. It only contains one page with the puzzle game created and inserted each time by JavaScript according to users' instruction. The whole layout is simple and easy to navigate, and the purpose of the site is straight-forward. Icons and aria-labels are used throughout the web page to enhance users' comprehension.  
 
 <img src="assets/img/readme-screenshots/pageload.png"> 
 
@@ -26,36 +26,36 @@ This site was built based on a simple and intutive principle. It only contains o
 ### Existing Features
 
 - **Favicon**
-   - A favicon is implemented with a colorful four-pieces puzzle.
-   - This puzzle logo appears in the the tab header to allow the user to easily identify the website while multiple tabs opening.
+   - A favicon is implemented with a colorful four-piece puzzle.
+   - This puzzle logo appears in the tab header to allow the user to easily identify the website while multiple tabs opening.
    <img src="assets/img/readme-screenshots/favicon.png">  
 
 - **Logo and Title**
    - The colorful puzzle logo and the gemstone-sparkled title bring the website alive.   
-   - It carrys out the simple style and declares the the purpose of the website: puzzle games and fun!  
+   - It carries out the simple style and declares the purpose of the website: puzzle games and fun!  
    <img src="assets/img/readme-screenshots/logo-title.png">  
 
 - **Game Guide Modal**
-   - A modal button created underth the page title is named "Game Guide". It contains the game information , rull and level difference for users' reference.   
+   - A modal button created underneath the page title is named "Game Guide". It contains the game information, rule and level difference for users' reference.   
    <img src="assets/img/readme-screenshots/guidemodal.png">    
-   - By clicking on it, a detailed game guide block drops out. When the user reading it on mobile, a scroll bar appears for them to scroll through the guide. When screen size is big enough, the scroll bar becomes hidden.
-   - The benifit of having the game guide as a modal makes the website clean and neat. 
+   - By clicking on it, a detailed game guide block drops out. When reading it on mobile, a scroll bar appears to scroll through the guide. When screen size is big enough, the scroll bar becomes hidden.
+   - The benefit of having the game guide as a modal makes the website clean and neat. 
    - A zoom animation used when the guide block opens.    
    <img src="assets/img/readme-screenshots/gameguide.png">  
 
-- **Puzzle type selection panel**
+- **Puzzle type buttons**
    - Puzzles are divided into 3 types according to the difficulty level.   
-   - They are listed at the selection panel for the user to choose. Users can either have a easy go by starting a 3x3 puzzle, or take a challenge for more complicated          level.     
+   - They are listed at the selection panel for the user to choose. Users can either have a easy go by starting a 3x3 puzzle, or take a challenge for a more omplicated          level.     
    <img src="assets/img/readme-screenshots/gamemenu.png">  
 
 - **Game area and default game**
-   - A beaufiful picture of bamboo leaves is set as the background image for game area.  The eye friendly green color would hopfully reduce the user's eye strain. This photo image is soppused to imediately create a peaceful and leisurely enviroment.   
+   - A beautiful picture of bamboo leaves is set as the background image for game area.  The eye friendly green color would hopefully reduce the user's eye strain. This photo image is supposed to immediately create a peaceful and leisurely environment.   
    - As the page loaded, a default 3x3 demo puzzle is appeared at the center of the game area. The user can either click on "Start" to play a 3x3 puzzle or click on one of      the game type buttons to play a more challenging puzzle.      
    <img src="assets/img/readme-screenshots/gamearea.png">  
 
 - **Demo puzzle**
    - Demo puzzle appears after the game type is selected. It demonstrates what a resolved puzzle in this particular puzzle type would look alike.   
-   - Its tiles are not movable and tiles color are all in white. Therefore users wont mistake it as the game itself.  
+   - Its tiles are not movable and tiles color is all in white. Therefore users won't mistake it as the game itself.  
    **4x4 Demo Puzzle**     
    <img src="assets/img/readme-screenshots/demopuzzle4x4.png">    
    **5x5 Demo Puzzle**  
@@ -68,7 +68,7 @@ This site was built based on a simple and intutive principle. It only contains o
    <img src="assets/img/readme-screenshots/controlpanel.png">   
 
    - **Start** Button:  
-      - **"Start"** button allows the the tiles in the demo puzzle to shuffle and a new game with the empty tile in **BLACK**will be ready to play.  
+      - **"Start"** button allows the tiles in the demo puzzle to shuffle and a new game with the empty tile in **BLACK**will be ready to play.  
       - After clicking on the "start" button, it changes to **“Restart"**. Users can click on **Restart** button any time to refresh a new puzzle within the same game type.  
       - By click on both **Start** and **Restart** button, the clock icon will reset to 0 and start to time.  
       - Which means users have the freedom to exit the current puzzle game before finishing it and start a new game.  
@@ -84,9 +84,9 @@ This site was built based on a simple and intutive principle. It only contains o
 - **Game Time and Score trackers**  
    - The intuitive clock and medal icons represent the timer and score.    
    <img src="assets/img/readme-screenshots/timeandscore.png">    
-   - Timer tracks the total sesonds which user spend in each single game. It resets to zero everytime a new game is displayed regardless puzzle type.   
-   - Score increments within one level(either 3x3,4x4 or 5x5 puzzles). It resets to zero when user hits one of the puzzle type button.  
-   - Witht the time and score tracking system, users are able to see their performance. Which makes the game more engaging.  
+   - Timer tracks the total seconds which users spend in each single game. It resets to zero everytime a new game is displayed regardless puzzle type.   
+   - Score increments within one level (either 3x3,4x4 or 5x5 puzzles). It resets to zero when user hits one of the puzzle type button.  
+   - With the time and score tracking system, users are able to see their performance. It makes the game more engaging.  
    <img src="assets/img/readme-screenshots/score.png">    
    <img src="assets/img/readme-screenshots/score2.png">    
 
@@ -95,15 +95,15 @@ This site was built based on a simple and intutive principle. It only contains o
    - It contains site owner's GITHUB link which will open in a new tab to allow easy navigation for users.   
    <img src="assets/img/readme-screenshots/footer.png">   
 
-- **Winning messsage**
-   - Wining message appears when the user solve the puzzle.  
+- **Winning message**
+   - Wining message appears when the user solves the puzzle.  
    - It alerts a congratulation message including the time spent for solving this puzzle.   
    <img src="assets/img/readme-screenshots/alertmsg5x5.png">   
 
 ## Features left to implement
 
 - Games can be extended from number puzzles to Jigsaws. In order to have a background picture for each tile and move together with the tiles to form a whole picture, canvas Js is ideal in this case.  
-- A user account can be created for each player and all the time and score records in the past could be stored there. In order to do that, it requires a server to store all the data and I should be able to do it when python is invloved.  
+- A user account can be created for each player and all the time and score records in the past could be stored there. In order to do that, it requires a server to store all the data and I should be able to do it when python is involved.  
 
 
 ## Technologies  
@@ -113,12 +113,12 @@ This site was built based on a simple and intutive principle. It only contains o
 - *CSS*
    - The Website was styled and layed out using CSS in an external file.
 - *JavaScript*  
-   - The puzzels are created throught JavaScript and inserted into HTML. 
-   - All the interrations between users and computer are all realised through JavaScript functions and event listeners. 
+   - The puzzles are created through JavaScript and inserted into HTML. 
+   - All the interactions between users and computer are all realised through JavaScript functions and event listeners. 
 - *GitPod*
    - This developer platform with VSCode editor can remotely work through web browser.
 - *GitHub*
-   - Source code is hosted on GitHub and delpoyed using Git Pages.
+   - Source code is hosted on GitHub and deployed using Git Pages.
 - *Git*
    - Used to commit and push code during the development of the Website
 - *Font Awesome*
@@ -134,12 +134,12 @@ This site was built based on a simple and intutive principle. It only contains o
 ## Testing
 
 ### Testing during development
-Continuous testings were carried out througout the site development. The whole project was broken into small sections and steps. Each part was checked and amended to the right standard before moving to next one. 
+Continuous testing was carried out throughout of the site development. The whole project was broken into small sections and steps. Each part was checked and amended to the right standard before moving to next one. 
 
 *Steps to test:*
 
-- HTML and CSS outcomes were instantly viewed through a live server window. It would be checked and adjusted (if necessory) before commitment.   
-- When it moved to JavaScrip, how to make the game working the way planned was well thought out and designed before coding. Ideas then become each function names and their contents were added one by one at later stage.
+- HTML and CSS outcomes were instantly viewed through a live server window. It would be checked and adjusted (if necessary) before commitment.   
+- Before start coding JavaScrip, how to make the game working the way planned was well thought out and designed. Ideas then turned into function names and their contents were added one by one at later stage.
 - To avoid increasing difficulty of debugging, one function was coded for achieving only one thing. Also this function would be tested constantly after each correction. 
 - The *developer tool* was helpful to indicate where the errors were. 
 - In the case of no errors were returned but function not working, `console.log` was used to test each line of the code to find where the possible errors located. 
@@ -150,7 +150,7 @@ Continuous testings were carried out througout the site development. The whole p
 
 - Interesting issues encountered:
    - **Issue No. 1**  
-   - There were 2 functions called sequently to move tile and then check if it wins. If the user wins, the `checkWin()` will alert a winning messsage. At the test, the winning message appears right after the user clicking on the tile but before it moves to the right spot. It happened as the `checkWin() ` was processed faster than `MoveTile()`. 
+   - There were 2 functions called in sequent to move tile and then check if it wins. If the user wins, the `checkWin()` will alert a winning message. At the test, the winning message appears right after the user clicking on the tile but before it moves to the right spot. It happened as the `checkWin() ` was processed faster than `MoveTile()`. 
    - The solution was to use `setTimeout()` method to execute `checkWin()` half of a second later than `MoveTile()`. 
 
    - **Issue No.2**  
@@ -168,14 +168,14 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 *Steps to test:*
 
 - Open browser and paste https://yuyizhong.github.io/puzzelfun/ to address bar to navigate.
-- Right click on the webpage and then inspect to Open the developer tools
+- Right click on the webpage and then inspect to open the developer tools
 - Set to responsive and decrease width to 320px and the zoom to 50%
 - Click and drag the responsive window to maximum width
 
 *Result*:
 
 - Website is responsive on all screen sizes from mobile, tablet, laptop and desktop. No images are pixelated or stretched. No text were overflowed or cut off. No contents were out of their box or get overlapped.
-- It functions well by using both keyborad and touch screen devices.
+- It functions well by using both keyboard and touch screen devices.
 
 ### Wave Web Accessibility
 
@@ -208,10 +208,10 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
   *Result:*
 
      - A block of game instruction pops out at the right position. 
-     - The instruction page contains header, footer and the main boday. Nothing is missing or hidden.
-     - Scroll bar appears on the side of the main boday when visiting the site through a mobile device and it works well.
-     - Scroll bar disapears when the screen space is big to show all the instruction contents. 
-     - Also it can be closed by clicking on "x" and the instrruction block becomes hidden again.
+     - The instruction page contains header, footer and the main body. Nothing is missing or hidden.
+     - Scroll bar appears on the side of the main body when visiting the site through a mobile device and it works well.
+     - Scroll bar disappears when the screen space is big to show all the instruction contents. 
+     - Also it can be closed by clicking on "x" and the instruction block becomes hidden again.
      - It was as expected.  
 
  *Game Type Buttons*
@@ -228,10 +228,10 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
   *Result:*
 
-     - A 3 rows and 3 coloms puzzle appeared at the center of the game area.  
+     - A 3 rows and 3 columns puzzle appeared at the center of the game area.  
      - The tiles are all in white and unmovable.
      - Numbers are sorted in ascending numerical order with the last tile not having any number.  
-     - Game control buttons are "Satrt", "Pause" and "Resume".  
+     - Game control buttons are "Start", "Pause" and "Resume".  
      - Timer and Score remain as default setting shows "0".  
      - It was as expected.  
 
@@ -245,10 +245,10 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
   *Result:*
 
-     - A 4 rows and 4 coloms puzzle appeared at the center of the game area.  
+     - A 4 rows and 4 columns puzzle appeared at the center of the game area.  
      - The tiles are all in white and unmovable.
      - Numbers are sorted in ascending numerical order with the last tile not having any number.  
-     - Game control buttons are "Satrt", "Pause" and "Resume".  
+     - Game control buttons are "Start", "Pause" and "Resume".  
      - Timer and Score remain as default setting shows "0".  
      - It was as expected.  
 
@@ -262,18 +262,18 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
   *Result:*
 
-     - A 5 rows and 5 coloms puzzle appeared at the center of the game area.  
+     - A 5 rows and 5 columns puzzle appeared at the center of the game area.  
      - The tiles are all in white and unmovable.
      - Numbers are sorted in ascending numerical order with the last tile not having any number.  
-     - Game control buttons are "Satrt", "Pause" and "Resume".  
+     - Game control buttons are "Start", "Pause" and "Resume".  
      - Timer and Score remain as default setting shows "0".  
      - It was as expected.  
 
  *Check and Move tiles*
 
-- Game rull is to move one of the tiles adjacent to the empty tile and sort the numbers to the right order. The test is to find out if only the tiles adjacent to the empty tiles can be moved and the others are not. 
+- Game rule is to move one of the tiles adjacent to the empty tile and sort the numbers to the right order. The test is to find out if only the tiles adjacent to the empty tiles can be moved and the others are not. 
 
-  *Steps to test Chech and Move tiles*
+  *Steps to test Check and Move tiles*
 
      - Navigate to Puzzle Fun default page.  
      - Step 1. Click on "Start" button.  
@@ -286,7 +286,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
   *Result:*
 
      - Only the tiles adjacent to the black empty tile can be moved by clicking and they will swap their position with the black tile.  
-     - The tiles not adjacent to the black tile remain unmoved when clcking on them.
+     - The tiles not adjacent to the black tile remain unmoved when clicking on them.
      - It was as expected.  
    
  *CheckWin*
@@ -305,15 +305,15 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
   *Result:*
 
-     - A congratulation messge box popped out and the timer stopped.  
-     - After click on "ok" at the message box, message disappeared. Timer remains at the when it was stopped and score add one more than before .
+     - A congratulation message box popped out and the timer stopped.  
+     - After click on "ok" at the message box, message disappeared. Timer remains at the when it was stopped and score add one more than before.
      - It was as expected.  
 
  *Start Button*
 
 - Test is to check after click on "Start" button the game would actually start.
 
-  *Steps to test Chech and Move tiles*
+  *Steps to test Start button*
 
      - Navigate to Puzzle Fun default page.  
      - Step 1. Click on "Start" button.  
@@ -323,7 +323,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
   *Result:*
 
-     - Demo puzzle is replaced with a puzzle game having numbers in random order and a black empty tile .  
+     - Demo puzzle is replaced with a puzzle game having numbers in random order and a black empty tile.  
      - "Start" button text changes to "Restart".
      - Timer starts from 0.
      - It was as expected.  
@@ -342,7 +342,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
   *Result:*
 
-     - The numbers of the puzzle shuffled everytime the restart button pressed.  
+     - The numbers of the puzzle shuffled every time the restart button pressed.  
      - The timer reset to zero and start a new timing.  
      - Score remains as unchanged.  
      - It was as expected.  
@@ -355,7 +355,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
      - Navigate to Puzzle Fun default page.  
      - Step 1. Click on "Start" button.  
-     - Step 2. Ater the timer starts, click on the pause button at any point.        
+     - Step 2. After the timer starts, click on the pause button at any point.        
      - Step 3. Click on "Restart" button, conduct step 2.  
      - Click on the 3x3 type button and repeat steps 1 to 3.  
      - Click on the 4x4 type button and repeat steps 1 to 3.  
@@ -389,7 +389,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
      
  *Timer*
 
-- Test if Timer imediately starts when game is loaded and restarts from zero whenever a new game is started. Also if it responses to pause and resume correctly at any circumstances. 
+- Test if Timer immediately starts when game is loaded and restarts from zero whenever a new game is started. Also if it responses to pause and resume correctly at any circumstances. 
 
   *Steps to test Timer*
 
@@ -401,7 +401,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
  *Score*
 
-- Test when user continues playing the puzzles within the same type if score increments when user solve each pazzle. Test would also check if it resets to zero when the puzzle type button is clicked.
+- Test when user continues playing the puzzles within the same type if score increments when user solve each puzzle. Test would also check if it resets to zero when the puzzle type button is clicked.
 
   *Steps to test Score*
 
@@ -411,8 +411,20 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
   *Result:*
 
      - After winning message is closed, the score increments.
-     - If the user leaves the current puzle type mode and click on the other game type, score rest to zero.
+     - If the user leaves the current puzzle type mode and click on the other game type, score rest to zero.
      - It was as expected. 
+
+*Shuffle*
+
+- Test if puzzles got shuffled after "Start" and "Restart" Buttons clicked. 
+
+  *Steps to test Timer*
+
+     -Shuffle function was also tested when testing Start and Restart functions.     
+
+  *Result:*
+  
+     - It performed as expected. 
 
  *Github Link* 
 - Click on the Github icon at the center of the footer. The specified Github page opens at a new tab.  
@@ -438,6 +450,57 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 ### Unfixed Bugs ###
 
 There is an unfixed bug.
-In order to shuffle the numbers randomly to start each puzzle game, I used a piece of code from Stack Overflow. It picks a number from the original array and excludes it from next draw. Repeating the loop untill all the numbers are picked from the original array. Then a new array of numbers is randomised and no 2 numbers are repeated.
-I is a clever way to randomise numbers but some of the number orders generated from this method will make the puzzle unsolvable. A more comprehensive shuffle method required to fix this bug. With the limited time and available languages, Instead I designed restart button for users to exit the current game anytime when they fund it impossible to solve.
+In order to shuffle the numbers randomly to start each puzzle game, I used a piece of code from Stack Overflow. It picks a number from the original array and excludes it from next draw. Repeating the loop until all the numbers are picked from the original array. Then a new array of numbers is randomised and no 2 numbers are repeated.
+It is a clever way to randomise numbers but some of the number orders generated from this method will make the puzzle unsolvable. A more comprehensive shuffle method required to fix this bug. With the limited time and available languages, I designed restart button for users to exit the current game anytime when they found it impossible to solve.
 
+## Deployment ##
+
+### Version Control ###
+
+The site was created at gitpod. It was then pushed to github to the remote repository ‘puzzlefun’ throughout the development.
+
+The commonly used git commands to push code to the remote repository are as follows:
+
+- git add <file>/ git add . - This command was used to add the modified file(s) to the staging area before they are committed.
+
+- git commit -m “commit message” - This command was used to commit changes to the local repository queue ready for the final step.
+
+- git push - This command was used to push all committed code to the remote repository on github.
+
+### To deploy to Github pages ###
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+- At the GitHub puzzlefun repository page, navigate to the Settings tab
+- From the menu on left select 'Pages'
+- From the source section drop-down menu, select the Branch: main
+- Click 'Save'
+- A live link will be displayed at top of the page in a banner when published successfully.
+The live link can be found here - https://yuyizhong.github.io/puzzelfun/
+
+
+### Clone the Repository Code from github desktop ###
+
+Navigate to the GitHub Repository you want to clone to use locally:
+
+- Click on the code drop down button
+- Click on HTTPS
+- Copy the repository link to the clipboard
+- Open your IDE of choice (git must be installed for the next steps)
+- Type git clone copied-git-url into the IDE terminal
+- The project will now been cloned on your local machine for use.
+
+## Credits ##
+
+As always my mentor Daisy Mc Girr give me very helpful suggestions to make a quality website!
+
+ ### Content ###
+ - I borrowed a block of code to shuffle the puzzle numbers from [Satck Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array). It is also commented at script.js.
+ - Favicon files were created at [Favicon Generator](https://favicon.io/favicon-converter/)
+ - The icons were taken from [Font Awesome](https://fontawesome.com/)
+ - I used [W3school](w3schools.com) to check the syntaxes and relevant attributes to get my website presented the way I wanted.
+ 
+
+ ### Media ###
+
+ - The photos I used for logo and game area background are from [Adobe free photo stock](https://stock.adobe.com/).
