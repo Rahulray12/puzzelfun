@@ -276,6 +276,15 @@ td:hover {
     } 
 }
 
+/* 404 error page */
+.error-msg h1 {
+    color: Black;
+    font-family:Lato, sans-serif;
+}
+#error {
+    margin-top: 100px;
+}
+
 /* For screen sizes from 760px wide up */
 
 @media screen and (min-width: 760px) {
