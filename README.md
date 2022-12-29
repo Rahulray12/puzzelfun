@@ -385,4 +385,34 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
      - Continued timer from where it was stopped.  
      - Nothing else is affected.
+     - It was as expected.
+     
+ *Timer*
+
+- Test if Timer imediately starts when game is loaded and restarts from zero whenever a new game is started. Also if it responses to pause and resume correctly at any circumstances. 
+
+  *Steps to test Timer*
+
+     -Timer was also tested when testing Start, Restart, Pause and Resume functions.     
+
+  *Result:*
+  
      - It was as expected.  
+
+ *Score*
+
+- Test when user continues playing the puzzles within the same type if score increments when user solve each pazzle. Test would also check if it resets to zero when the puzzle type button is clicked.
+
+  *Steps to test Score*
+
+     - Repeat all the steps at checkWin test.
+     - In order to see if it increments when playing the same type puzzles, after the winning messsage is closed, click on restart and play another one until winning again.    
+
+  *Result:*
+
+     - After winning message is closed, the score increments.
+     - If the user leaves the current puzle type mode and click on the other game type, score rest to zero.
+     - It was as expected. 
+
+ *Github Link* 
+- Click on the Github icon at the center of the footer. The specified Github page opens at a new tab.
