@@ -113,7 +113,8 @@ This site was built based on a simple and intutive principle. It only contains o
 - *CSS*
    - The Website was styled and layed out using CSS in an external file.
 - *JavaScript*  
-   - The puzzels are created throught JavaScript and insert into HTML. All the interrations between are all realised through Jaca
+   - The puzzels are created throught JavaScript and inserted into HTML. 
+   - All the interrations between users and computer are all realised through JavaScript functions and event listeners. 
 - *GitPod*
    - This developer platform with VSCode editor can remotely work through web browser.
 - *GitHub*
@@ -121,9 +122,9 @@ This site was built based on a simple and intutive principle. It only contains o
 - *Git*
    - Used to commit and push code during the development of the Website
 - *Font Awesome*
-   - Icons obtained from https://fontawesome.com/ were used as the Social media links in the footer section.
+   - Icons obtained from https://fontawesome.com/ were used through out of the website.
 - *Tinyjpg*
-   - All the images used throughout the website were reduced size at https://tinyjpg.com/ 
+   - All the images used at the website and README were reduced size at https://tinyjpg.com/ 
 - *Favicon.io*
    - Favicon files were created at https://favicon.io/favicon-converter/
 - *Am I Responsive*
