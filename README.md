@@ -167,7 +167,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
 *Steps to test:*
 
-- Open browser and paste https://yuyizhong.github.io/mama-yogis to address bar to navigate.
+- Open browser and paste https://yuyizhong.github.io/puzzelfun/ to address bar to navigate.
 - Right click on the webpage and then inspect to Open the developer tools
 - Set to responsive and decrease width to 320px and the zoom to 50%
 - Click and drag the responsive window to maximum width
@@ -183,7 +183,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
 *Result*
 - 0 Errors and 0 Contrast errors.
-<img src="assets/image/readme-screenshot/wave.PNG">
+<img src="assets/img/readme-screenshots/wave.png">   
 
  - Issue fund during the page development:
    - I originally used 3 identical forms for 3 studio yogo classes booking. All the lables are the same besides the options of the time are different for each class. 
