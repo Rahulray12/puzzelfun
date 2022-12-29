@@ -332,7 +332,7 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
 
 - Test if restart button reshuffle the puzzle, reset the timer and current score value remains unchanged. 
 
-  *Steps to test Chech and Move tiles*
+  *Steps to test Restart button*
 
      - Navigate to Puzzle Fun default page.  
      - Step 1. Click on "Start" button and then click on "Restart" when text changed.  
@@ -347,3 +347,42 @@ This site was tested to ensure responsiveness on screen sizes from 320px and upw
      - Score remains as unchanged.  
      - It was as expected.  
 
+ *Pause Button*
+
+- Test is to check if Pause button stops the timer.  . 
+
+  *Steps to test Pause button*
+
+     - Navigate to Puzzle Fun default page.  
+     - Step 1. Click on "Start" button.  
+     - Step 2. Ater the timer starts, click on the pause button at any point.        
+     - Step 3. Click on "Restart" button, conduct step 2.  
+     - Click on the 3x3 type button and repeat steps 1 to 3.  
+     - Click on the 4x4 type button and repeat steps 1 to 3.  
+     - Click on the 5x5 type button and repeat steps 1 to 3.  
+
+  *Result:*
+
+     - Timer paused instantly.  
+     - Nothing else is changed.
+     - It was as expected.  
+
+ *Resume Button*
+
+- Test if Resume button continues the timer after stopped by pause. 
+
+  *Steps to test Resume button*
+
+     - Navigate to Puzzle Fun default page.  
+     - Step 1. Click on "Start" button.  
+     - Step 2. After a game starts, click on the pause button and press the resume button at any point.  
+     - Step 3. Click on "Restart" button, conduct step 2.  
+     - Click on the 3x3 type button and repeat steps 1 to 3.  
+     - Click on the 4x4 type button and repeat steps 1 to 3.  
+     - Click on the 5x5 type button and repeat steps 1 to 3.  
+
+  *Result:*
+
+     - Continued timer from where it was stopped.  
+     - Nothing else is affected.
+     - It was as expected.  
