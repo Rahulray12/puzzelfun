@@ -58,35 +58,35 @@ This site was built based on a simple and intutive principle. It only contains o
    - Its tiles are not movable and tiles color are all in white. Therefore users wont mistake it as the game itself.  
    **4x4 Demo Puzzle**     
    <img src="assets/img/readme-screenshots/demopuzzle4x4.png">    
-   
    **5x5 Demo Puzzle**  
-   <img src="assets/img/readme-screenshots/demopuzzle5x5.png">
+   <img src="assets/img/readme-screenshots/demopuzzle5x5.png">  
    - When Demo puzzle displays in the game area, the control panel and user performance trackers remain as default setting.  
-   <img src="assets/img/readme-screenshots/undergamepanel.png">
+   <img src="assets/img/readme-screenshots/undergamepanel.png">  
 
 - **Control Panel**
-   - Control buttons listed underneath the game area give flexibility to users to run the game.  
-   <img src="assets/img/readme-screenshots/controlpanel.png">  
+   - Control buttons listed underneath the game area give flexibility to users to run the game.   
+   <img src="assets/img/readme-screenshots/controlpanel.png">   
+
    - **Start** Button:  
-      - **"Start"** button allows the the tiles in the demo puzzle to shuffle and a new game with the empty tile in **BLACK**will be ready to play.
-      - After clicking on the "start" button, it changes to **“Restart"**. Users can click on **Restart** button any time to refresh a new puzzle within the same game type.
-      - By click on both **Start** and **Restart** button, the clock icon will reset to 0 and start to time.
+      - **"Start"** button allows the the tiles in the demo puzzle to shuffle and a new game with the empty tile in **BLACK**will be ready to play.  
+      - After clicking on the "start" button, it changes to **“Restart"**. Users can click on **Restart** button any time to refresh a new puzzle within the same game type.  
+      - By click on both **Start** and **Restart** button, the clock icon will reset to 0 and start to time.  
       - Which means users have the freedom to exit the current puzzle game before finishing it and start a new game.  
       <img src="assets/img/readme-screenshots/start.png">    
-   - **Pause** Button
-      - **Pause** Button allows the user to pause the timer anytime they needed.
+   - **Pause** Button  
+      - **Pause** Button allows the user to pause the timer anytime they needed.  
       - Their performance wont be affected by interruptions.    
-      <img src="assets/img/readme-screenshots/pause.png">    
-   - **Resume** Button
-      - It continue the timer from where it stops.   
-      <img src="assets/img/readme-screenshots/resume.png">    
+      <img src="assets/img/readme-screenshots/pause.png">      
+   - **Resume** Button  
+      - It continue the timer from where it stops.     
+      <img src="assets/img/readme-screenshots/resume.png">      
 
-- **Game Time and Score trackers**
-   - The intuitive clock and medal icons represent the timer and score.  
+- **Game Time and Score trackers**  
+   - The intuitive clock and medal icons represent the timer and score.    
     <img src="assets/img/readme-screenshots/timeandscore.png">    
-   - Timer tracks the total sesonds which user spend in each single game. It resets to zero everytime a new game is displayed regardless puzzle type. 
-   - Score increments within one level(either 3x3,4x4 or 5x5 puzzles). It resets to zero when user hits one of the puzzle type button.
-   - Witht the time and score tracking system, users are able to see their performance. Which makes the game more engaging.
+   - Timer tracks the total sesonds which user spend in each single game. It resets to zero everytime a new game is displayed regardless puzzle type.   
+   - Score increments within one level(either 3x3,4x4 or 5x5 puzzles). It resets to zero when user hits one of the puzzle type button.  
+   - Witht the time and score tracking system, users are able to see their performance. Which makes the game more engaging.  
    <img src="assets/img/readme-screenshots/score.png">    
    <img src="assets/img/readme-screenshots/score2.png">    
 
@@ -100,7 +100,78 @@ This site was built based on a simple and intutive principle. It only contains o
    - It alerts a congratulation message including the time spent for solving this puzzle.   
    <img src="assets/img/readme-screenshots/alertmsg5x5.png">   
 
-   
+## Features left to implement
+
+- Games can be extended from number puzzles to Jigsaws. In order to have a background picture for each tile and move together with the tiles to form a whole picture, canvas Js is ideal in this case.  
+- A user account can be created for each player and all the time and score records in the past could be stored there. In order to do that, it requires a server to store all the data and I should be able to do it when python is invloved.  
+
+
+## Technologies  
+
+- *HTML*
+   - The structure of the Website was developed using HTML as the main language.
+- *CSS*
+   - The Website was styled and layed out using CSS in an external file.
+- *JavaScript*  
+   - The puzzels are created throught JavaScript and insert into HTML. All the interrations between are all realised through Jaca
+- *GitPod*
+   - This developer platform with VSCode editor can remotely work through web browser.
+- *GitHub*
+   - Source code is hosted on GitHub and delpoyed using Git Pages.
+- *Git*
+   - Used to commit and push code during the development of the Website
+- *Font Awesome*
+   - Icons obtained from https://fontawesome.com/ were used as the Social media links in the footer section.
+- *Tinyjpg*
+   - All the images used throughout the website were reduced size at https://tinyjpg.com/ 
+- *Favicon.io*
+   - Favicon files were created at https://favicon.io/favicon-converter/
+- *Am I Responsive*
+   - Screen shots of the various device breakpoints for the website were produced at https://ui.dev/amiresponsive/
+
+
+## Testing
+
+### Responsiveness
+
+All pages were tested to ensure responsiveness on screen sizes from 320px and upwards on Chrome, Edge and Firefox.
+
+*Steps to test:*
+
+- Open browser and paste https://yuyizhong.github.io/mama-yogis to address bar to navigate.
+- Right click on the webpage and then inspect to Open the developer tools
+- Set to responsive and decrease width to 320px and the zoom to 50%
+- Click and drag the responsive window to maximum width
+
+*Result*:
+
+- Website is responsive on all screen sizes and no images are pixelated or stretched. No text were overflowed or cut off. No contents were out of their box or get overlapped.
+
+### Accessibility
+
+[WAVE Web Accessibility Evaluation Tools](https://wave.webaim.org/) was used throughout development and for final testing of the deployed website to check for any aid accessibility testing. 
+
+*Result*
+- 0 Errors and 0 Contrast errors.
+<img src="assets/image/readme-screenshot/wave.PNG">
+
+ - Issue fund during the page development:
+   - I originally used 3 identical forms for 3 studio yogo classes booking. All the lables are the same besides the options of the time are different for each class. 
+ - Fix:
+   - I merged the forms into 1. As without using JavaScript, I wont be able to provide the relevant time options based on the yoga class selected. I add the radio choice for users to select the yoga class and then put all the time slots in the select drop down list, with class name next to each time slot. 
+
+### Lighthouse Testing
+- Test on desktop
+
+<img src="assets/image/readme-screenshot/lighthouse-desktop.PNG">
+
+
+- Test on mobile
+
+<img src="assets/image/readme-screenshot/lighthouse-mobile.PNG">
+
+### Functional Testing
+
 
 
 
