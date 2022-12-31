@@ -19,10 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			}
 		});
 	}
-
     //activate close game guide function when click on 'x'
     document.getElementsByClassName("close")[0].addEventListener("click", closeGuide);
-
          
     // Default game is 3X3 puzzle when DOM is loaded
     runGame("3");   
