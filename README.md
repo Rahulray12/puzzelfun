@@ -512,3 +512,5 @@ As always my mentor Daisy Mc Girr gives me very suggestive advices to make a qua
  ### Media ###
 
  - The photos I used for logo and game area background are from [Adobe free photo stock](https://stock.adobe.com/).
+ - 
+ ## Happy Gaming
